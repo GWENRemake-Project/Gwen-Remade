@@ -1,3 +1,2 @@
 # Gwen-Remade
-Configs to remake Gwen
-this is some code we might be using in gwen.
+Configs to mimic Gwen's cheat detection.
