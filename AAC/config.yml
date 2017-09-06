@@ -24,8 +24,6 @@ hitbox:
 
    # Minimum number of violations before AAC starts cancelling hits
    min_vl: 1
-
-   # Map of violation levels to commands
    thresholds:
       8: "aacstaffnotify {player} in {world} is suspected for Killaura (Hitbox) (ping = {ping}, tps = {tps})"
       20: "aacstaffnotify {player} in {world} is suspected for Killaura (Hitbox) #2 (ping = {ping}, tps = {tps})"
@@ -36,7 +34,6 @@ badpackets:
    enabled: true
    # After how many moves should packets be cancelled?
    cancel_threshold: 30
-
    # How many moves should a player be able to send in 3 ticks
    # An unmodified client should send 3 moves in 3 ticks. Be sure to think about lag
    # The violation value will be increased by (how many packets the player sends - max_moves) / 2
@@ -134,7 +131,6 @@ speed:
    # Specific configuration options. Don't touch these unless you know what you're doing.
    #item_scalar: 0.5
    #sneak_scalar: 0.63
-   # Map of violation levels to commands
    thresholds:
       60: "aacmessage {player} It looks like you might be glitching, please tap sneak and block with your sword"
       150: "aacstaffnotify {player} in {world} is suspected for Speed hacking (ping = {ping}, tps = {tps})"
@@ -144,16 +140,13 @@ speed:
 
 # Derp stops some forms of derp hacking.
 derp:
-   # Do you want to enable the derp check
    enabled: true
-   # Map of violation levels to commands
    thresholds:
       1: "ba kick {player} gwen &4&lGWEN&c: Dont derp hack"
 
 # Knockback checks if the player moves after he is hit
 # Obsolete, see the velocity check
 knockback:
-   # Do you want to enable the knockback check
    enabled: false
    # legacy configuration
    tick_delay: 9
@@ -163,17 +156,11 @@ knockback:
    min_knockback_time: 2
    thresholds:
       10: "aacstaffnotify {player} in {world} is suspected for Anti-Knockback (ping = {ping}, tps = {tps})"
-      25: "ba kick {player} gwen &4&lGWEN&c: Not taking knockback"
-      50: "ba kick {player} gwen &4&lGWEN&c: Not taking knockback"
-      100: "ba kick {player} gwen &4&lGWEN&c: Not taking knockback"
-      125: "ba kick {player} gwen &4&lGWEN&c: Not taking knockback"
       150: "ba ban {player} gwen &4&lGWEN&c: Using antiknockback"
 
 # NoSwing makes sure players swing their arm when attacking
 noswing:
-   # Do you want to enable the noswing check
    enabled: true
-   # Map of violation levels to commands
    thresholds:
       20: "aacstaffnotify {player} in {world} is not swinging their arm (ping = {ping}, tps = {tps})"
       50: "ba kick {player} gwen &4&lGWEN&c: Not swinging arm"
@@ -181,7 +168,6 @@ noswing:
 
 # Regen directly stops players from healing too quickly
 regen:
-   # Do you want to enable the regen check
    enabled: true
    # Should AAC cancel regeneration if it happens too quickly?
    cancel_regen: true
@@ -189,7 +175,6 @@ regen:
    min_regen_delay: 3600
    # What delay should AAC force if the player is fully satiated
    min_satiated_delay: 450
-   # Map of violation levels to commands
    thresholds:
       10: "aacstaffnotify {player} in {world} is suspected for Regen (ping = {ping}, tps = {tps})"
       15: "ba kick {player} gwen &4&lGWEN&c: Regenerating health too quickly"
@@ -199,7 +184,6 @@ regen:
 
 # Killaura detects combat hacks which give an unfair advantage
 killaura:
-   # Do you want to enable the killaura check
    enabled: true
    # What % of the time should AAC do a check?
    check_chance: 100
@@ -216,7 +200,6 @@ killaura:
    max_diff: 0.11
    # How far should the player be allowed to reach during the check
    max_reach: 4.5
-   # Map of violation levels to commands
    thresholds:
       25: "aacstaffnotify {player} in {world} is suspected for Killaura (Normal) (ping = {ping}, tps = {tps})"
       100: "ba kick {player} gwen &4&lGWEN&c: Killaura is not allowed"
@@ -225,24 +208,17 @@ killaura:
 
 # Heuristics are used by AAC to detect advanced killaura hacks that bypass normal checks
 heuristics:
-   # Do you want to enable AAC's heuristic detection
    enabled: true
    # Heuristic confidence required for a violation. This is calculated as a percentage from 0.0% to 100.0%.
    # Represents how likely a player is to be using killaura, based on heuristic analysis.
    # Constraints: 50 <= min_confidence < 100
    min_confidence: 50
-   # List of patterns which should not incur a violation
-   # Should be a 4 character string, usually "P/" followed by two digits
    exempt:
     - "P/00" # This is an example entry. Pattern P/00 does not exist.
-   # Map of violation levels to commands.
-   # The heuristics check is different to other checks: higher violation level does not mean a higher chance of hacking
-   # All violation levels are equal. The default threshold of 10 creates the effect of a delayed ban.
    thresholds: {}
 
 # NoFall ensures players take fall damage
 nofall:
-   # Do you want to enable the NoFall check
    enabled: true
    # Minimum downwards velocity for NoFall to apply
    required_velocity: -0.2
@@ -251,7 +227,6 @@ nofall:
    # Map of violation levels to commands
    thresholds:
       10: "aacstaffnotify {player} in {world} is suspected for NoFall hacks (ping = {ping}, tps = {tps})"
-      25: "ba kick {player} gwen &4&lGWEN&c: Hacking - Taking No Fall damage"
       50: "ba kick {player} gwen &4&lGWEN&c: Hacking - Taking No Fall damage"
       75: "ba kick {player} gwen &4&lGWEN&c: Hacking - Taking No Fall damage"
       100: "ba kick {player} gwen &4&lGWEN&c: Hacking - Taking No Fall damage"
@@ -273,11 +248,8 @@ jesus:
 
 # Phase stops people glitching through blocks
 phase:
-   # Do you want to enable the Phase check
    enabled: true
    # Which materials should be exempt from phase checking?
-   # Items are included in this list due to potenital ViaVersion/cross version compatibility problems with 1.8
-   # Should be entered exactly as seen on the Spigot Material enum.
    exclude:
    # Incorrect hitboxes in 1.8 servers
     - "ANVIL"
@@ -305,11 +277,9 @@ phase:
 
 # FastUse stops players consuming items too quickly
 fastuse:
-   # Do you want to enable the FastUse check
    enabled: true
    # What delay should AAC enforce for eating an item (ms)
    ms_to_use: 1200
-   # Map of violation levels to commands
    thresholds:
       2: "aacstaffnotify {player} in {world} is suspected for FastEat hacks (ping = {ping}, tps = {tps})"
       5: "ba kick {player} gwen &4&lGWEN&c: Hacking - Using items too quickly"
