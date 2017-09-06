@@ -9,7 +9,6 @@
 
 # Hitbox forces players to look at entities they want to attack.
 hitbox:
-   # Do you want to enable the angle check
    enabled: true
 
    # How much should AAC expand hitboxes by?
