@@ -21,3 +21,12 @@ jday-command: ban %player% (JDay) %check%
 autoban-cancel: '&7You canceled &c%player% &7autoban queue.'
 jday-broadcast: '&3%player% &7has been removed permanently from the network.'
 NOTE: CODE WILL BE EDITED SOON.
+
+In a perspective of a player.
+ji says the wave is in a certain ammount of time.
+players warp to court, jail, prison, other and wait for JDay to occur
+JDAY occurs
+Players are banned 1 by 1
+players notic all of the players that will be banned have 4 guardians floating above the suspects head.
+   spreading the players so the chunk dosent get too laggy would be smart. use the /spreadnear command i think.
+the plyer explodes and the guardian goes away.
