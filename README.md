@@ -8,7 +8,7 @@ download the latest [release](https://github.com/josephworks/Gwen-Remade/release
 # Setup
 
 ```txt
-download the latest [release](https://github.com/josephworks/Gwen-Remade/releases)
+download the latest release
 switch out your server jar with paper.jar
 combine your server's plugin folder with gwen's plugin folder
 start your server
