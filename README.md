@@ -3,10 +3,12 @@ This repository is where we put our latest builds!!!
 
 tested with paper 1.11.2
 
+download the latest [release](https://github.com/josephworks/Gwen-Remade/releases)
+
 # Setup
 
 ```txt
-download the latest [release](http://link to latest release)
+download the latest release
 switch out your server jar with paper.jar
 combine your server's plugin folder with gwen's plugin folder
 start your server
