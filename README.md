@@ -20,3 +20,5 @@ start your server
 GWEN ANIMATION:
 The configs were generated from the plugins.
 If you remove the configs it will autogenerate on next start but it wouldnt work with (or like) gwen.
+
+GWEN in no way should mess with your server. I do not take responsibility for the anticheat plugin or players banned by gwen.
