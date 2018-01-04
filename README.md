@@ -15,8 +15,11 @@ start your server
 ```
 
 > Note: paper.jar is 1.11.2, the recommended gwen version
+
 > Note: If you are using Gwen release, paper.jar is not a plugin so do not put it in your plugins folder.
+
 > Note: The plugins folder has essentials delete your servers essentials and use the essentials provided
+
 > Note: The essentials plugins provided are not regular essentials, they are EssentialsX, a fork of essentials that works better.
 
 GWEN ANIMATION:
