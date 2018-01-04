@@ -1,0 +1,301 @@
+AutoFish:
+   enabled: true
+   cancel_vl: 5
+   parts:
+      inhuman_reaction:
+         enabled: true
+         fishing_milliseconds: 145
+      consistency:
+         enabled: true
+         consistency_events: 5
+         violation_offset: 25
+         weight: 4
+   thresholds:
+      5: "aacstaffnotify {player} in {world} is suspected for AutoFish"
+      7: "aacstaffnotify {player} in {world} is highly suspected for AutoFish"
+      10: "ba kick {player} gwen &4&lGWEN&c: AutoFish"
+      25: "ba ban {player} gwen &4&lGWEN&c: Hacking - Autofish"
+
+AutoPotion:
+   enabled: true
+   cancel_vl: 2
+   timeout: 1000
+   time_offset: 150
+   angle_offset: 5
+   angle_start_threshold: 40
+   look_down_angle: 80
+   thresholds:
+      10: "aacstaffnotify {player} in {world} is suspected for AutoPotion"
+      50: "ba kick {player} gwen &4&lGWEN&c: AutoPotion"
+      75: "ba kick {player} gwen &4&lGWEN&c: AutoPotion"
+      100: "ba ban {player} gwen &4&lGWEN&c: Hacking - AutoPotion"
+      
+BlindnessSprint:
+   enabled: true
+   cancel_vl: 5
+   thresholds:
+      6: "aacstaffnotify {player} in {world} is suspected for Sprint (BlindnessSprint)"
+      11: "aacstaffnotify {player} in {world} is highly suspected for Sprint (BlindnessSprint)"
+      20: "ba kick {player} gwen &4&lGWEN&c: Sprint"
+      50: "ba ban {player} gwen &4&lGWEN&c: Hacking - Sprint"
+
+EqualRotation:
+   enabled: true
+   cancel_vl: 15
+   timeout: 1000
+   thresholds:
+      10: "aacstaffnotify {player} in {world} is suspected for EqualRotation"
+      20: "aacstaffnotify {player} in {world} is highly suspected for EqualRotation"
+      30: "ba kick {player} gwen &4&lGWEN&c: Invalid rotations"
+      50: "ba ban {player} gwen &4&lGWEN&c: Hacking - Invalid rotations"
+
+Esp:
+   enabled: true
+   update_ticks: 5
+
+Fastswitch:
+   enabled: true
+   cancel_vl: 3
+   max_ping: 400
+   switch_milliseconds: 50
+   thresholds:
+      3: "aacstaffnotify {player} in {world} may be using Fastswitch"
+      5: "aacstaffnotify {player} in {world} is suspected for Fastswitch"
+      10: "aacstaffnotify {player} in {world} is highly suspected for Fastswitch"
+      15: "ba kick {player} gwen &4&lGWEN&c: Fastswitch"
+      25: "ba ban {player} gwen &4&lGWEN&c: Hacking - Fastswitch"
+
+Freecam:
+   enabled: true
+   idle_time: 1000
+
+InventoryHit:
+   enabled: true
+   cancel_vl: 3
+   thresholds:
+      3: "aacstaffnotify {player} in {world} is suspected for Killaura/Autoarmor (InventoryHit)"
+      6: "aacstaffnotify {player} in {world} is highly suspected for Killaura/Autoarmor (InventoryHit)"
+      10: "ba kick {player} gwen &4&lGWEN&c: Killaura/Triggerbot/inventorywalk"
+      25: "ba ban {player} gwen &4&lGWEN&c: Hacking - Attacking with inventory open"
+
+InventoryChat:
+   enabled: true
+   cancel_vl: 2
+   thresholds:
+      2: "aacstaffnotify {player} in {world} is suspected for InventoryChat"
+      5: "aacstaffnotify {player} in {world} is highly suspected for InventoryChat"
+      10: "ba kick {player} gwen &4&lGWEN&c: Hacking - InventoryChat"
+
+InventoryHeuristics:
+   enabled: false
+
+InventoryMove:
+   enabled: true
+   min_tps: 19.5
+   cancel_vl: 10
+   thresholds:
+      10: "aacstaffnotify {player} in {world} is suspected for InventoryMove"
+      20: "aacstaffnotify {player} in {world} is highly suspected for InventoryMove"
+      30: "ba kick {player} gwen &4&lGWEN&c: InventoryMove"
+      50: "ba kick {player} gwen &4&lGWEN&c: InventoryMove"
+      75: "ba kick {player} gwen &4&lGWEN&c: InventoryMove"
+      100: "ba ban {player} gwen &4&lGWEN&c: Hacking - InventoryMove"
+
+InventoryRotation:
+   enabled: true
+   thresholds:
+      12: "aacstaffnotify {player} in {world} is suspected for Killaura/Autoarmor (InventoryRotation)"
+      24: "aacstaffnotify {player} in {world} is highly suspected for Killaura/Autoarmor (InventoryRotation)"
+      35: "ba kick {player} gwen &4&lGWEN&c: Killaura/Autoarmor"
+      50: "ba kick {player} gwen &4&lGWEN&c: Killaura/Autoarmor"
+      75: "ba kick {player} gwen &4&lGWEN&c: Killaura/Autoarmor"
+
+KillauraEntity:
+   enabled: true
+   position:
+      entityOffset: 3.4
+      offsetRandomizationRange: 0.2
+      minXZDifference: 1.55
+   equipment:
+      # The weapons the entities will use in a fake fight
+      weapons:
+         # Types
+         sword: true
+         axe: true
+         # Materials
+         wood: true
+         gold: true
+         stone: true
+         iron: true
+         diamond: true
+      # The armor the entities will spawn with
+      armor:
+         # Types
+         helmet: true
+         chestplate: true
+         leggings: true
+         boots: true
+         # Materials
+         leather: true
+         gold: true
+         iron: true
+         diamond: true
+   thresholds:
+      5: "aacstaffnotify {player} in {world} is suspected for Killaura"
+      10: "aacstaffnotify {player} in {world} is highly suspected for Killaura"
+      15: "ba kick {player} gwen &4&lGWEN&c: Killaura"
+      25: "ba kick {player} gwen &4&lGWEN&c: Killaura"
+      50: "ba ban {player} gwen &4&lGWEN&c: Hacking - Killaura"
+
+MultiInteraction:
+   enabled: true
+   cancel_vl: 6
+   max_ping: 400
+   min_tps: 18.5
+   min_time: 51
+   thresholds:
+      6: "aacstaffnotify {player} in {world} may be using MultiInteraction"
+      12: "aacstaffnotify {player} in {world} is suspected for MultiInteraction"
+      22: "aacstaffnotify {player} in {world} is highly suspected for MultiInteraction"
+      35: "ba kick {player} gwen &4&lGWEN&c: MultiInteraction"
+      50: "ba kick {player} gwen &4&lGWEN&c: MultiInteraction"
+      75: "ba ban {player} gwen &4&lGWEN&c: MultiInteraction"
+
+Pingspoof:
+   enabled: true
+   ping_offset: 3.0
+   max_real_ping: 100
+   thresholds:
+      4: "aacstaffnotify {player} in {world} is suspected for Pingspoofer"
+      8: "aacstaffnotify {player} in {world} is highly suspected for Pingspoofer"
+      15: "ba kick {player} gwen &4&lGWEN&c: You Have bad internet so ingame it seams you are hacking"
+      20: "ba kick {player} gwen &4&lGWEN&c: It seams you are hacking. Talk to an admin about your internet"
+      50: "ba kick {player} gwen &4&lGWEN&c: Last warning to talk to an admin before Banned"
+      75: "ba kick {player} gwen &4&lGWEN&c: Hacking - Pingspoof"
+
+Scaffold:
+   enabled: true
+   cancel_vl: 5
+   buffer_size: 6
+   scaffold_delay: 300
+   timeout: 1000
+   thresholds:
+      10: "aacstaffnotify {player} in {world} is suspected for Scaffold"
+      20: "aacstaffnotify {player} in {world} is highly suspected for Scaffold"
+      30: "ba kick {player} gwen &4&lGWEN&c: ScaffoldWalk"
+
+Skinblinker:
+   enabled: true
+   thresholds:
+      1: "aacstaffnotify {player} in {world} is suspected for Skinblinker"
+      5: "ba kick {player} gwen &4&lGWEN&c: Skinblinker"
+
+Teaming:
+   enabled: false
+   delay: 5000
+   proximity_range: 4.5
+   allowed_size: 1
+   no_pvp_time: 6000
+   enabled_worlds:
+    - "world"
+    - "world_nether"
+    - "world_the_end"
+   safe_zones:
+      - "world -15 -15 15 15"
+   thresholds:
+      4: "aacstaffnotify {team} in {world} may be Teaming"
+      10: "aacstaffnotify {team} in {world} are suspected for Teaming"
+      15: "aacstaffnotify {team} in {world} are highly suspected for Teaming"
+
+Tower:
+   enabled: true
+   cancel_vl: 6
+   buffer_size: 6
+   tower_leniency: 0.075
+   jump_boost_leniency: 0.09
+   timeout: 5500
+   thresholds:
+      5: "aacstaffnotify {player} in {world} is suspected for Tower"
+      10: "ba kick {player} gwen &4&lGWEN&c: Tower"
+      25: "ba kick {player} gwen &4&lGWEN&c: Tower"
+      50: "ba kick {player} gwen &4&lGWEN&c: Hacking - Tower"
+
+ClientControl:
+   5zig:
+      enabled: false
+      disable:
+         potion_effect_hud: false
+         potion_indicator_vignette: false
+         armour_hud: false
+         player_saturation: false
+         entity_health_indicator: true
+         auto_reconnect: false
+      commands_on_detection:
+         - "aacstaffnotify {player} in {world} uses 5zig"
+
+   BetterSprinting:
+      enabled: false
+      disable: true
+      commands_on_detection:
+         - "aacstaffnotify {player} in {world} uses BetterSprinting"
+
+   Forge:
+      enabled: true
+      commands_on_detection:
+         - "aacstaffnotify {player} in {world} uses Forge"
+
+   LabyMod:
+      enabled: false
+      disable:
+         player_saturation: false
+         gui: false
+         nick: false
+         blockbuild: false
+         chat: false
+         extras: false
+         old_animations: false
+         potion_effect_hud: false
+         armour_hud: false
+         damage_indicator: true
+         minimap_radar: true
+
+   LiteLoader:
+      enabled: false
+      commands_on_detection:
+         - "ba kick {player} gwen &4&lGWEN&c: LiteLoader"
+
+   Schematica:
+      enabled: false
+      disable:
+         printer: true
+         save: true
+         load: false
+
+   WorldDownloader:
+      enabled: false
+      commands_on_detection:
+         - "ba kick {player} gwen &4&lGWEN&c: WorldDownloader"
+
+
+LogBot:
+   enabled: true
+   days_until_delete: 10
+
+Heuristic-Addition:
+   enabled: true
+   confidences:
+      50: "aacstaffnotify {player} in {world} may be using Killaura (Heuristics)"
+      75: "aacstaffnotify {player} in {world} is suspected for using Killaura (Heuristics)"
+      90: "aacstaffnotify {player} in {world} is highly suspected for using Killaura (Heuristics)"
+      97:
+       - "aacstaffnotify {player} was banned for Killaura (Heuristics)"
+       - "ba ban {player} gwen &4&lGWEN&c: Hacking - Killaura (hueristics)"
+
+Verbose:
+   # Do you want AACAdditionPro to log into a log-file
+   file: true
+   # Should players be able to get Verbose-Messages, if they have the aac.verbose permission
+   # Players can toggle the verbose-output with the command /aacadditionpro verbose
+   players: true
+   # Should the verbose output be logged in the console (very spammy, only recommended for testing purposes)
+   console: true

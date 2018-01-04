@@ -109,6 +109,8 @@ BlindnessSprint:
    thresholds:
       6: "aacstaffnotify {player} in {world} is suspected for Sprint (BlindnessSprint)"
       11: "aacstaffnotify {player} in {world} is highly suspected for Sprint (BlindnessSprint)"
+      20: "ba kick {player} gwen &4&lGWEN&c: Sprint"
+      50: "ba ban {player} gwen &4&lGWEN&c: Hacking - Sprint"
 
 # EqualRotation checks for invalid rotation packets which have the rotation of the last packet as content
 # This will catch several Scaffold, Tower, Killaura and Aimbot mods
@@ -483,7 +485,7 @@ ClientControl:
    Forge:
       # Do you want to enable the Forge-Control
       # This cannot be blocked; I recommend to kick if desired
-      enabled: false
+      enabled: true
       commands_on_detection:
          - "aacstaffnotify {player} in {world} uses Forge"
 

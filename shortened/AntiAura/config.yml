@@ -1,0 +1,311 @@
+DisableElytraChecks: true
+ConsoleLogDragbacks: true
+IgnoreUnknownTeleportCause: true
+Violations:
+  KickCommand: kick %PLAYER% %HACKNAME% is not allowed on this server!#broadcast %PLAYER% was kicked for %HACKNAME%! (%CHECKNAME%)
+  ExecuteAllCommands: true
+  ViolationDecreasePerHour: 1
+  1: "ba kick {player} gwen &4&lGWEN&c: Hacking/cheating. This is your oppertunity to turn off your hacks!"
+  2: tempban %PLAYER% 10m
+  5: "ba ban %player% gwen &8&l[&4&lGWEN&8&l]&c: You have been banned for using the %HACKNAME% hack %HACKAMOUNT% times!"
+SuperThreshold:
+  Enabled: true
+  SuperThreshold: 2
+  ViolationDecreasePerSecond: 0.01
+
+
+PingAccounting:
+  Enabled: true
+  PingLeniency: 150
+  SilenceWarnings: false
+  UseRealPing: false
+  MaxPing: 600
+
+Forcefield:
+  Angle:
+    Enabled: true
+    HackingAngle: 1.8
+    BlockImpossibleHits: true
+    Threshold: 8
+    SafeHitDecrease: 1.2
+    AngleCommand: # 
+    
+  Reach:
+    Enabled: true
+    MaxReach: 4.4
+    
+  Occlusion:
+    Enabled: true
+     
+  HeadMove:
+    Enabled: true
+    CancelExtremeMovement: true
+    LagBackThreshold: 3.0
+    MaxMove: 0.09
+    CancelMove:
+      CancelMove: 0.15
+      UseHeadMoveThreshold: true
+      MinimumBlockThreshold: 2
+    CantAttackTime: 4
+    Threshold: 8
+    SafeHitDecrease: 0.85
+    DecreasePerSecond: 1.4
+    HeadCommand: # 
+    
+  Accuracy:
+    Enabled: true
+    IsMoving: 0.010
+    IsMoving2: 0.0075
+    MovingAttackTime: 5
+    DistanceAccounting:
+      Enabled: true
+      DistanceAmount: 3.5
+      DistanceWeight: 0.50
+    YawOnly: true
+    Threshold: 8
+    ArmSwingDecrease: 0.35
+    DecreasePerSecond: 0.40
+    AccuracyCommand: # 
+    
+FastClick:
+  Enabled: true
+  Threshold: 5
+  MaxClicksPerSecond: 8
+  LagAccounting: false
+  FastClickCommand: # 
+
+AutoBow:
+  Enable: true
+  BowThreshold: 3
+  BlockArrowsIfSpeedTooHigh: true
+  LowVelocityAllowedSpeed: 5.5
+  MidVelocityAllowedSpeed: 3.0
+  HighVelocityAllowedSpeed: 1.5
+  AutoBowCommand: # 
+
+Soup:
+  Enabled: true
+  BlockAttackedPlayerToo: false
+  MaxSpeedWhenMovingInventoryItems: 1.0
+  SoupTime: 1.5
+  Threshold: 5
+  SoupCommand: #
+
+Map:
+  MapScrewer: true
+  LenientMode: true
+  DistanceChecked: 50
+  DistanceCheckedY: 30
+  HowOften: 10
+  MinDistance: 10
+  HideOnlyPlayers: false
+  HidePlayersThroughBlocks: true
+  HidePlayersBehind: true
+  TileESP:
+    Enabled: true
+    ShowDistance: 15
+    TracerDistance: 60
+    IntervalMult: 1
+    SuperLenientMode: false
+    ChunkDistance: 5
+  XRay:
+    Enabled: true
+    IntervalMult: 1
+    ShowBlocksIfExposedToAir: false
+    MaxChunksPerIntervalMult: 1
+    ChunkDistance: 5
+
+Knockback:
+  Enabled: true
+  TicksAfterHitToCheck: 10
+  DontCheckLaggyPeople: false
+  MinimumKnockbackCheck: 0.1
+  LowKnockbackValues: 0.35
+  AmountMoved: 1.0
+  DontCheckOnWalls: true
+  KnockbackCommand: # 
+  Threshold: 8
+  LowerAmount: 0.6
+  DontCheckIfPlayerIsSprinting: false
+
+Specifics:
+  CommandPermissions: false
+  CrackShotCompatibilityTime: 40
+  AutoUpdaterMinutes: 60
+  version: 40
+  CallFakeLeaveEvent: false
+  InvalidChatCommand: tempban %PLAYER% 30m You have been temporarily banned for invalid chat used for PVP Logging!
+  EnablePermissions: false
+  ShowDebug: true
+  EnableTargetblockChecking: false
+JoinTeleport: true
+
+Criticals:
+  Enabled: true
+  BlockPacketCriticalHits: false
+  IncreaseThresholdWithPacketCriticals: true
+  SafeHitDecrease: 2.0
+  Threshold: 8
+  CriticalsCommand: # 
+  
+FastEat:
+  Enabled: true
+  Time: 1.5
+  BlockIfSpeedTooHigh: true
+  MaxEatingTravelSpeed: 1.4
+  Threshold: 3
+  SafeEatDecrease: 1.0
+  FastEatCommand: # 
+  
+Spambots:
+  Captcha:
+    Enabled: true
+    EnabledOnlyWhenSpammed: true
+    NewPlayersOnly: true
+    CaptchaCommand: kick %PLAYER% You failed the captcha!
+    Message: Please type CAPTCHA to move and type commands!
+  MessageDisabling:
+    StopChatBeforeMovement: true
+    DisableJoinAndLeaveMessages: true
+    
+EnableNormalChecks: true
+
+Step:
+  Enabled: true
+  TimePerCheck: 3
+  MaxDistanceMovedUpwards: 1.4
+  ForceUserToGround: true
+  Threshold: 8
+  SingleBlock: false
+  StepCommand: # 
+
+VelocityAccounting:
+  AllowBowBoosting: true
+  AllowMultipleVelocities: true
+  MultipleXZVelocities: true
+  XZVelocityMul: 20
+  UsePlayerVelocity: false
+  NormalVelocityLeniency: 1.1
+  CombatVelocityLeniency: 2.0
+  FlatLeniencyInBlocks: 0.1
+
+Spider:
+  Enabled: true
+  MaxHeightOffGround: 1.30
+  DragBackThreshold: 0
+  Threshold: 5
+  SpiderCommand: # 
+
+Flight:
+    Enabled: true
+    StrictMode: false
+    Threshold: 5
+    LowerAmount: 1.0
+    ValuePerPotionLevel: 2
+    MaxHeightOffGround: 1.80
+    TimeInTheAir: 20
+    FlightCommand: #  
+    TeleportDownOnly: false
+
+CancelChecksIfPlayerIsTeleportedDistance: 1
+DontCheckTime: 1
+
+Speed:
+    Enabled: true
+    ValuePerPotionLevel: 2
+    EfficientCheck: false
+    ExemptWhenUsingVelocity: false
+    BlockStationarySprinting: false
+    SpeedLeniency: 0.40
+    ForceDragbackLeniency: 1.0
+    Threshold: 15
+    DragBackThreshold: 10
+    LowerAmount: 0.5
+    SpeedCommand: # 
+    KeepDirection: false
+    MaxSneakingSpeed: 1.25
+    Water: true
+    DamageHearts: 1.0
+ 
+Teleport:
+   Enable: true
+   TeleportCommand: # 
+   ForceKick: true
+   BlockTeleport: true
+   MinTeleportDistance: 6
+   Threshold: 5
+
+FastPlace:
+  Enabled: true
+  Threshold: 5
+  MaxBlocksAllowedPerSecond: 6
+  BlockPlacingWithHeadMovement: true
+  OnlyWithBelowFeet: true
+  BlockTower: true
+  TowerDistance: 1.5
+  MaxTowerPerSec: 2
+  FastPlaceCommand: # 
+
+NoFall:
+  Enabled: true
+  Threshold: 15
+  LeniencyTime: 2
+  DragToGround: true
+  DamagePlayer: true
+  NoFallCommand: # 
+
+Phase:
+  Enabled: true
+  Threshold: 5
+  PhaseCommand: # 
+  
+FastBreak:
+  Enabled: true
+  AccuracyCreative: false
+  BreakSpeedIgnore: 500
+  Threshold: 15
+  SafeHitDecrease: 0.4
+  MaxSurvivalBlocksPerSecond: 20
+  MaxCreativeBlocksPerSecond: 40
+  DisableFastBreakOnWood: false
+  FastBreakCommand: # 
+
+NoSwing:
+  Enabled: true
+  Threshold: 5
+  SafeInteractDecrease: 0.5
+  SwingLeniency: 3
+  NoSwingCommand: # 
+  
+AntiFire:
+  Enabled: true
+  Threshold: 4
+  SafeFireDecrease: 0.1
+  AntiFireCommand: # 
+
+AntiPotion:
+  Enabled: true
+  Threshold: 1.5
+  ReLightPlayer: false
+  SafePotionDecrease: 0.05
+  AntiPotionCommand: # 
+  
+Regen:
+  Enabled: true
+  MaxHalfHeartsPerRegen: 1
+  MaxHeartsPerSecond: 4.0
+  RegenCommand: # 
+  Threshold: 5
+
+Elytra:
+  HeightBlockage: true
+  DistanceBlockage: true
+
+BowAimbot:
+  ArrowVelocity: 1.3
+  ArrowsOnly: false
+
+All:
+  MinTPS: 10
+  StopCrashes: false
+  ForceDependencyDownload: false
