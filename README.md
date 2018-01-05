@@ -14,6 +14,13 @@ combine your server's plugin folder with gwen's plugin folder
 start your server
 ```
 
+---
+Prefixes:
+Plain - &8&l[&4&lGWEN&8&l]:&c 
+red tie fighter - &c&l<&r&l=&8&l[&4&lGWEN&8&l]&r&l=&c&l>: 
+dark tie fighter - &0&l<&r&l=&8&l[&0&lGWEN&8&l]&r&l=&0&l>&4&l: 
+---
+
 > Note: paper.jar is 1.11.2, the recommended gwen version
 
 > Note: If you are using Gwen release, paper.jar is not a plugin so do not put it in your plugins folder.
