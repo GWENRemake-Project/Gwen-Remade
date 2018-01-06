@@ -163,7 +163,7 @@ Sign:
 NoKnockback:
    enabled: true
    threshold:
-        1: "ba kick <player> gwen &c&l&8&l[&4&lGWEN&8&l]&c: Hacking - NoKnockback"
+        30: "ba kick <player> gwen &c&l&8&l[&4&lGWEN&8&l]&c: Hacking - NoKnockback"
 
 #Should DAC enable fastplace check
 FastPlace:
