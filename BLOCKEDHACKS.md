@@ -1,8 +1,8 @@
-# Blocked Hacks:
+# Blocked Hacks
 
 > Note: some hacks may be duplicated, if so tht means it is checked with two or more anticheats
 
-# AAC:
+# AAC
 
 Fly (Fly)
 Speed (Speed, Fly)
@@ -49,7 +49,7 @@ Freecam if you break blocks (Interact)
 Liquids (Interact)
 Scaffold (Interact)
 
-# DAC:
+# DAC
 
 Spider / Climb
 Jetpack / AirWalk
