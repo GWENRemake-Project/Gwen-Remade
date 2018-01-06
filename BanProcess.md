@@ -10,6 +10,7 @@ JI as banwave
    4. Judgement day occurs
       4.5. One by one it bans all of the players with the configured JDay command.
          4.5.5. Brodcasts {Player} has been banned.
+
 Code:
 prefix: '&8&l[&4&lGWEN&8&l] '
 ban-timer: '&c%player% &7will be banned in 5 seconds. &cReason &7[&c%check%&7]'
@@ -23,22 +24,24 @@ autoban-cancel: '&7You canceled &c%player% &7autoban queue.'
 jday-broadcast: '&3%player% &7has been removed permanently from the network.'
 NOTE: CODE WILL BE EDITED SOON.
 
-In a perspective of a player.
+In a perspective of a player: 
 ji says the wave is in a certain ammount of time.
-players warp to court, jail, prison, other and wait for JDay to occur
+players warp to court, jail, prison, or other structure and wait for JDay to occure.
 JDAY occurs
 Players are banned 1 by 1
-players notic all of the players that will be banned have 4 guardians floating above the suspects head.
+players notice that all of the players that will be banned have 4 guardians floating above the suspects head.
    spreading the players so the chunk dosent get too laggy would be smart. use the /spreadnear command i think.
 the plyer explodes and the guardian goes away.
+After the explosion goes away the player is GONE!
+the player has been banned.
 
 WITH MOBSTACKER INSTALLED, THE 4 GUARDIANS DO SPAWN BUT THEY GET COMBINDED TO ONE MOB INSTANTLY.
 YOU ONLY SEE ONE GUARDIN INSTEAD OF 4
 ALSO THE GUARDIAN DOSENT GO AWAY CAUSE IT IS A NEW DIFFERENT ENTITY.
 TRY AND MAKE YOUR LAG CLEARER BYPASS GUARDIANS
-LIST OF THINGS THAT MESS WITH GWEN ANIMATION
+LIST OF THINGS THAT MESS WITH GWEN ANIMATION:
 MOBSTACKER
 REACT
 CLEARLAG
-MOB REMOVER PLUGINS
+MOB REMOVING PLUGINS
 PLUGINS THAT HALT SERVER ACTIVITY
