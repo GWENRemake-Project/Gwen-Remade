@@ -1,3 +1,7 @@
+
+
+> Note: some hacks may be duplicated, if so tht means it is checked with two or more anticheats
+
 # AAC:
 
 Fly (Fly)
