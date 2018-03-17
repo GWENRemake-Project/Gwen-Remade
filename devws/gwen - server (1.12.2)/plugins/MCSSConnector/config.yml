@@ -1,5 +1,0 @@
-# Core-element of MC Server Soft.
-# Provides real-time diagnostics and server telemetry.
-
-#interval to generate statistics (in seconds)
-update_interval: 1
