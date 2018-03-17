@@ -1,7 +1,7 @@
 # AAC messages configuration file
 
 # Prefix (wooooo yeah)
-prefix: "&8&l[&4&lGWEN&8&l] &c"
+prefix: "&8&l[&4&lGWEN&8&l]: &c"
 
 # Spam messages
 spam_too_fast: "You can't chat that fast!"

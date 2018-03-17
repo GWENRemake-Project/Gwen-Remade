@@ -1,0 +1,7 @@
+# Autoeye (Version: 0.50C)
+plugin: 
+  # The current version of AutoEye.
+  # Please don't change this value.
+  version: '0.50C'
+  # Would you like AutoEye to automatically keep up to date?
+  auto_update: true
