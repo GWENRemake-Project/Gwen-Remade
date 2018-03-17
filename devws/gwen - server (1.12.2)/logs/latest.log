@@ -1,0 +1,407 @@
+[11:44:05] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[11:44:05] [Server thread/INFO]: Loading properties
+[11:44:05] [Server thread/INFO]: Default game type: SURVIVAL
+[11:44:05] [Server thread/INFO]: This server is running Paper version git-Paper-1351 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[11:44:05] [Server thread/INFO]: Debug logging is disabled
+[11:44:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:44:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:44:05] [Server thread/INFO]: Generating keypair
+[11:44:05] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:44:05] [Server thread/INFO]: Using default channel type
+[11:44:06] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[11:44:07] [Server thread/ERROR]: Cannot load configuration from stream
+org.bukkit.configuration.InvalidConfigurationException: while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'string', line 84, column 1:
+    	enable: true
+    ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55) ~[paper.jar:git-Paper-1351]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162) ~[paper.jar:git-Paper-1351]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:206) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:167) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.java.JavaPlugin.getConfig(JavaPlugin.java:135) [paper.jar:git-Paper-1351]
+	at fr.flynrod.crucial.Crucial.<init>(Crucial.java) [Crucial.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:1.8.0_161]
+	at java.lang.Class.newInstance(Unknown Source) [?:1.8.0_161]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:94) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:127) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) [paper.jar:git-Paper-1351]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:310) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:225) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) [paper.jar:git-Paper-1351]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'string', line 84, column 1:
+    	enable: true
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:421) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524) ~[paper.jar:git-Paper-1351]
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437) ~[paper.jar:git-Paper-1351]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53) ~[paper.jar:git-Paper-1351]
+	... 18 more
+[11:44:07] [Server thread/INFO]: [Essentials] Loading Essentials vTeamCity
+[11:44:07] [Server thread/INFO]: [EssentialsProtect] Loading EssentialsProtect vTeamCity
+[11:44:07] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat vTeamCity
+[11:44:07] [Server thread/INFO]: [EssentialsGeoIP] Loading EssentialsGeoIP vTeamCity
+[11:44:07] [Server thread/INFO]: [FlameAPI] Loading FlameAPI v2.5
+[11:44:07] [Server thread/INFO]: [AutoEye] Loading AutoEye v0.50C
+[11:44:07] [Server thread/INFO]: [PlugMan] Loading PlugMan v2.1.4
+[11:44:07] [Server thread/INFO]: [BanAnimations] Loading BanAnimations v2.1.0
+[11:44:07] [Server thread/INFO]: [BanWaves] Loading BanWaves v1.0-Stable
+[11:44:07] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn vTeamCity
+[11:44:07] [Server thread/INFO]: [MCSSConnector] Loading MCSSConnector v3.0.0.0
+[11:44:07] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.3.0
+[11:44:07] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.12.2) has not yet been tested! Proceed with caution.
+[11:44:07] [Server thread/INFO]: [AAC] Loading AAC v3.3.9
+[11:44:07] [Server thread/INFO]: [DakataAntiCheat] Loading DakataAntiCheat vBETA 2.0
+[11:44:07] [Server thread/INFO]: [PAC] Loading PAC v1.3.0
+[11:44:07] [Server thread/INFO]: [AACAdditionPro] Loading AACAdditionPro v3.0.2-b3
+[11:44:07] [Server thread/INFO]: [TakaAntiCheat] Loading TakaAntiCheat v3.1.1
+[11:44:07] [Server thread/INFO]: [AntiAura] Loading AntiAura v11.41
+[11:44:07] [Server thread/INFO]: [Crucial] Loading Crucial v1.5.7
+[11:44:07] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.3.0
+[11:44:07] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[11:44:07] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[11:44:07] [Server thread/INFO]: Preparing level "world"
+[11:44:07] [Server thread/INFO]: -------- World Settings For [world] --------
+[11:44:07] [Server thread/INFO]: View Distance: 10
+[11:44:07] [Server thread/INFO]: Item Merge Radius: 2.5
+[11:44:07] [Server thread/INFO]: Item Despawn Rate: 6000
+[11:44:07] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[11:44:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[11:44:07] [Server thread/INFO]: Random Lighting Updates: false
+[11:44:07] [Server thread/INFO]: Structure Info Saving: true
+[11:44:07] [Server thread/INFO]: Max TNT Explosions: 100
+[11:44:07] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[11:44:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[11:44:07] [Server thread/INFO]: Experience Merge Radius: 3.0
+[11:44:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[11:44:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[11:44:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[11:44:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Cane Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Melon Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Vine Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[11:44:07] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[11:44:07] [Server thread/INFO]: Mob Spawn Range: 4
+[11:44:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[11:44:08] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[11:44:08] [Server thread/INFO]: View Distance: 10
+[11:44:08] [Server thread/INFO]: Item Merge Radius: 2.5
+[11:44:08] [Server thread/INFO]: Item Despawn Rate: 6000
+[11:44:08] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[11:44:08] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[11:44:08] [Server thread/INFO]: Random Lighting Updates: false
+[11:44:08] [Server thread/INFO]: Structure Info Saving: true
+[11:44:08] [Server thread/INFO]: Max TNT Explosions: 100
+[11:44:08] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[11:44:08] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[11:44:08] [Server thread/INFO]: Experience Merge Radius: 3.0
+[11:44:08] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[11:44:08] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[11:44:08] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[11:44:08] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Cane Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Melon Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Vine Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[11:44:08] [Server thread/INFO]: Mob Spawn Range: 4
+[11:44:08] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[11:44:08] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[11:44:08] [Server thread/INFO]: View Distance: 10
+[11:44:08] [Server thread/INFO]: Item Merge Radius: 2.5
+[11:44:08] [Server thread/INFO]: Item Despawn Rate: 6000
+[11:44:08] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[11:44:08] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[11:44:08] [Server thread/INFO]: Random Lighting Updates: false
+[11:44:08] [Server thread/INFO]: Structure Info Saving: true
+[11:44:08] [Server thread/INFO]: Max TNT Explosions: 100
+[11:44:08] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[11:44:08] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[11:44:08] [Server thread/INFO]: Experience Merge Radius: 3.0
+[11:44:08] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[11:44:08] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[11:44:08] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[11:44:08] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Cane Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Melon Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Vine Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[11:44:08] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[11:44:08] [Server thread/INFO]: Mob Spawn Range: 4
+[11:44:08] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[11:44:08] [Server thread/INFO]: Preparing start region for level 0 (Seed: -3339291463865407326)
+[11:44:09] [Server thread/INFO]: Preparing spawn area: 8%
+[11:44:10] [Server thread/INFO]: Preparing spawn area: 19%
+[11:44:11] [Server thread/INFO]: Preparing spawn area: 36%
+[11:44:12] [Server thread/INFO]: Preparing start region for level 1 (Seed: -3339291463865407326)
+[11:44:13] [Server thread/INFO]: Preparing spawn area: 16%
+[11:44:14] [Server thread/INFO]: Preparing spawn area: 43%
+[11:44:14] [Server thread/INFO]: Preparing start region for level 2 (Seed: -3339291463865407326)
+[11:44:14] [Server thread/INFO]: [Essentials] Enabling Essentials vTeamCity
+[11:44:14] [Server thread/WARN]: [Essentials] Ignoring attempt to change parent of plugin logger
+[11:44:15] [Server thread/INFO]: [Essentials] Bukkit version format changed. Version not checked.
+[11:44:15] [Server thread/INFO]: [Essentials] git-Paper-1351 (MC: 1.12.2)
+[11:44:15] [Server thread/INFO]: [Essentials] 1.12.2-R0.1-SNAPSHOT
+[11:44:15] [Server thread/INFO]: [Essentials] Using locale en_US
+[11:44:15] [Server thread/INFO]: [Essentials] Using locale en_US
+[11:44:15] [Server thread/INFO]: [Essentials] Essentials: Using config file enhanced permissions.
+[11:44:15] [Server thread/INFO]: [Essentials] Permissions listed in as player-commands will be given to all users.
+[11:44:15] [Server thread/INFO]: [EssentialsProtect] Enabling EssentialsProtect vTeamCity
+[11:44:15] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat vTeamCity
+[11:44:15] [Server thread/INFO]: [EssentialsGeoIP] Enabling EssentialsGeoIP vTeamCity
+[11:44:15] [Server thread/INFO]: [EssentialsGeoIP] This product includes GeoLite data created by MaxMind, available from http://www.maxmind.com/.
+[11:44:15] [Server thread/INFO]: [FlameAPI] Enabling FlameAPI v2.5
+[11:44:15] [Server thread/INFO]: [FlameAPI] [FMod] Mod enabled.
+[11:44:15] [Server thread/INFO]: [AutoEye] Enabling AutoEye v0.50C
+[11:44:15] [Server thread/INFO]: [AutoEye] Registered the Impossible Movements check.
+[11:44:15] [Server thread/INFO]: [AutoEye] Registered the Ping Spoof check.
+[11:44:15] [Server thread/INFO]: [AutoEye] Registered the Speed check.
+[11:44:15] [Server thread/INFO]: [PlugMan] Enabling PlugMan v2.1.4
+[11:44:15] [Server thread/INFO]: [BanAnimations] Enabling BanAnimations v2.1.0
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation cage has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation carfall has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation explode has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation freeze has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation gwen has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation lightning has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation spit has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation meteor has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation pig has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation swordfall has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation snaptrap has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] Animation yinyang has been loaded!
+[11:44:15] [Server thread/INFO]: [BanAnimations] BanAnimations has been enabled! (V.2.1.0)
+[11:44:15] [Server thread/INFO]: [BanWaves] Enabling BanWaves v1.0-Stable
+[11:44:15] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn vTeamCity
+[11:44:15] [Server thread/INFO]: [MCSSConnector] Enabling MCSSConnector v3.0.0.0
+[11:44:15] [Server thread/WARN]: [MCSSConnector] null
+[11:44:15] [Server thread/WARN]: [MCSSConnector] Could not determine the version of MCSS, this could cause problems...
+[11:44:15] [Server thread/INFO]: [MCSSConnector] Running for Server git-Paper-1351 (MC: 1.12.2)
+[11:44:15] [Server thread/INFO]: [MCSSConnector] Powering your Minecraft Home Server since Beta 1.5
+[11:44:15] [Server thread/INFO]: [MCSSConnector] > Core-element of MC Server Soft. 
+[11:44:15] [Server thread/INFO]: [MCSSConnector] > Provides real-time diagnostics and server telemetry.
+[11:44:15] [Server thread/INFO]: [MCSSConnector] For more info visit: https://www.mcserversoft.com/
+[11:44:15] [Server thread/INFO]: [AAC] Enabling AAC v3.3.9
+[11:44:15] [Server thread/INFO]: %%__ENCRYPTME__%%[AAC] Cracked by BlackSpigot Staff Team
+[11:44:15] [Craft Scheduler Thread - 0/INFO]: [AutoEye] Found a new update for AutoEye. The new version is 0.50D.
+[11:44:15] [Server thread/INFO]: [AAC] No internet connection.
+[11:44:15] [Server thread/INFO]: [DakataAntiCheat] Enabling DakataAntiCheat vBETA 2.0
+[11:44:15] [Server thread/INFO]: [GWEN]: Another AC detected, this plugin may cause false positives with other AC's
+[11:44:15] [Server thread/INFO]: [PAC] Enabling PAC v1.3.0
+[11:44:16] [Server thread/INFO]: [PAC] Enabled 14 modules
+[11:44:16] [Server thread/INFO]: [AACAdditionPro] Enabling AACAdditionPro v3.0.2-b3
+[11:44:16] [Server thread/INFO]: [AACAdditionPro] Enabling plugin...
+[11:44:16] [Craft Scheduler Thread - 0/INFO]: [AutoEye] Downloading new version...
+[11:44:16] [Craft Scheduler Thread - 1/INFO]: [PlugMan] No update was found.
+[11:44:16] [Server thread/INFO]: [AACAdditionPro] Heuristic-Addition has been enabled.
+[11:44:16] [Server thread/INFO]: [AACAdditionPro] LogBot was chosen not to be enabled.
+[11:44:16] [Craft Scheduler Thread - 0/INFO]: [AutoEye] Successfully downloaded the new version of AutoEye.
+[11:44:16] [Craft Scheduler Thread - 0/INFO]: [AutoEye] For the update to take effect please reload the server.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] ClientControl-BetterSprinting was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] ClientControl-5zig was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] ClientControl-Forge has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] ClientControl-LabyMod was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] ClientControl-LiteLoader was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] ClientControl-Schematica was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] ClientControl-WorldDownloader was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] AutoFish has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] AutoPotion has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] BlindnessSprint has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] EqualRotation has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Esp has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Fastswitch has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] FlyPatch was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Freecam has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] InventoryChat has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] InventoryHeuristics was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] InventoryHit has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] InventoryMove has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] InventoryRotation has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] KillauraEntity has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] MultiInteraction has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Pingspoof has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Scaffold has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Skinblinker has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Teaming was chosen not to be enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Tower has been enabled.
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] AACAdditionPro Version 3.0.2-b3 enabled
+[11:44:17] [Server thread/INFO]: [AACAdditionPro] Cracked by HotSpot@BlackSpigot.com
+[11:44:17] [Server thread/INFO]: [TakaAntiCheat] Enabling TakaAntiCheat v3.1.1
+[11:44:17] [Server thread/INFO]: [GWEN]:  ******************************
+[11:44:17] [Server thread/INFO]: [GWEN]:  Welcome to Taka Anti Cheat
+[11:44:17] [Server thread/INFO]: [GWEN]:  This anticheat is still BETA
+[11:44:17] [Server thread/INFO]: [GWEN]:  Report bugs to @dani02
+[11:44:17] [Server thread/INFO]: [GWEN]:  ******************************
+[11:44:17] [Server thread/INFO]: [GWEN]:  Register Events...
+[11:44:17] [Server thread/INFO]: [GWEN]:  Events Registered!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Starting VL Cleaner...
+[11:44:17] [Server thread/INFO]: [GWEN]:  VL Cleaner Started!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Loading Players...
+[11:44:17] [Server thread/INFO]: [GWEN]:  Players Loaded!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Loading Config...
+[11:44:17] [Server thread/INFO]: [GWEN]:  Reports loaded!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Config Loaded!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Hooking to ProtocolLib...
+[11:44:17] [Server thread/INFO]: [GWEN]:  Hooked to ProtocolLib!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Loading WTDT...
+[11:44:17] [Server thread/INFO]: [GWEN]:  WTDT Loaded!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Loading LSW...
+[11:44:17] [Server thread/INFO]: [GWEN]:  LSW Loaded!
+[11:44:17] [Server thread/INFO]: [GWEN]:  Taka has been started(88ms)
+[11:44:17] [Server thread/INFO]: [AntiAura] Enabling AntiAura v11.41
+[11:44:17] [Server thread/INFO]: Hello, and welcome to AntiAura! Please refer to the guides on Spigot or send me a PM if you are having issues! If you want configuration help, check the logs or the config comments!
+[11:44:17] [Server thread/INFO]: By using this plugin, you agree with the EULA.txt inside the jar file.
+[11:44:17] [Server thread/INFO]: Paths: D:\Desktop\minecraft server\minecraftserversoft\servers\Gwen 1.12.2\plugins\AntiAura\config.yml || 
+[11:44:17] [Server thread/ERROR]: Error occurred while enabling AntiAura v11.41 (Is it up to date?)
+java.lang.InstantiationError: a.b
+	at a.md.onEnable(md.java:1811) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405) [paper.jar:git-Paper-1351]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:387) [paper.jar:git-Paper-1351]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:336) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:442) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:403) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:341) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:292) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) [paper.jar:git-Paper-1351]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
+[11:44:17] [Server thread/INFO]: [AntiAura] Disabling AntiAura v11.41
+[11:44:17] [Server thread/INFO]: Please ignore any errors here - They are harmless and are almost unfixable.
+[11:44:17] [Server thread/INFO]: [Crucial] Enabling Crucial v1.5.7
+[11:44:17] [Server thread/INFO]: 
+[11:44:17] [Server thread/INFO]:    _____                 _       _ 
+[11:44:17] [Server thread/INFO]:   / ____|               (_)     | |
+[11:44:17] [Server thread/INFO]:  | |     _ __ _   _  ___ _  __ _| |
+[11:44:17] [Server thread/INFO]:  | |    | '__| | | |/ __| |/ _` | |
+[11:44:17] [Server thread/INFO]:  | |____| |  | |_| | (__| | (_| | |
+[11:44:17] [Server thread/INFO]:   \_____|_|   \__,_|\___|_|\__,_|_|
+[11:44:17] [Server thread/INFO]: 
+[11:44:17] [Server thread/INFO]:      (c) Developed by Flynrod
+[11:44:17] [Server thread/INFO]: 
+[11:44:17] [Server thread/INFO]: CRUCIAL > Please wait...
+[11:44:17] [Server thread/INFO]: Done (10.263s)! For help, type "help" or "?"
+[11:44:17] [Server thread/INFO]: Timings Reset
+[11:44:18] [Server thread/INFO]: [AAC] Beginning Enable...
+[11:44:18] [Server thread/INFO]: [AAC] Checking config file...
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check chat.Spam
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Hitbox
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Fastbow
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.FightSpeed
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Check combat.Knockback is disabled
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Regen
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.FastUse
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Killaura
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Heuristics
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.BadPackets
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Speed
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Phase
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Fly
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.NoFall
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Jesus
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Derp
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Criticals
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.FastBreak
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.FastPlace
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.Nuker
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.NoSwing
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.Interact
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.Velocity
+[11:44:18] [Server thread/INFO]: [AAC] (CheckManager) Enabling check MovementManager
+[11:44:18] [Server thread/INFO]: [AAC] Starting API...
+[11:44:18] [Server thread/INFO]: [AAC] AAC has been enabled.
+[11:44:22] [Server thread/INFO]: CRUCIAL > Loading is finished !
+[11:44:22] [Server thread/INFO]: CRUCIAL > ALERT : You're using a different version than 1.11. Note that this version of Crucial only works at 1.11.
+[11:44:40] [Server thread/INFO]: Saving...
+[11:44:40] [Server thread/INFO]: Saved the world
+[11:44:40] [Server thread/INFO]: Stopping the server
+[11:44:40] [Server thread/INFO]: Stopping server
+[11:44:40] [Server thread/INFO]: [Crucial] Disabling Crucial v1.5.7
+[11:44:40] [Server thread/INFO]: Crucial > Crucial has been disabled !
+[11:44:40] [Server thread/INFO]: [TakaAntiCheat] Disabling TakaAntiCheat v3.1.1
+[11:44:40] [Server thread/INFO]: [AACAdditionPro] Disabling AACAdditionPro v3.0.2-b3
+[11:44:40] [Server thread/INFO]: [AACAdditionPro] AACAdditionPro disabled.
+[11:44:40] [Server thread/INFO]: [AACAdditionPro]  
+[11:44:40] [Server thread/INFO]: [PAC] Disabling PAC v1.3.0
+[11:44:40] [Server thread/INFO]: [DakataAntiCheat] Disabling DakataAntiCheat vBETA 2.0
+[11:44:40] [Server thread/INFO]: [AAC] Disabling AAC v3.3.9
+[11:44:40] [Server thread/INFO]: [AAC] Disabling checks...
+[11:44:40] [Server thread/INFO]: [AAC] Saving log file...
+[11:44:40] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.3.0
+[11:44:40] [Server thread/INFO]: [MCSSConnector] Disabling MCSSConnector v3.0.0.0
+[11:44:40] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn vTeamCity
+[11:44:40] [Server thread/INFO]: [BanWaves] Disabling BanWaves v1.0-Stable
+[11:44:40] [Server thread/INFO]: [BanAnimations] Disabling BanAnimations v2.1.0
+[11:44:40] [Server thread/INFO]: BanAnimations has been disabled!
+[11:44:40] [Server thread/INFO]: [PlugMan] Disabling PlugMan v2.1.4
+[11:44:40] [Server thread/INFO]: [AutoEye] Disabling AutoEye v0.50C
+[11:44:40] [Server thread/ERROR]: Error occurred while disabling AutoEye v0.50C (Is it up to date?)
+java.lang.NoClassDefFoundError: b/b
+	at com.heirteir.autoeye.Main.onDisable(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:266) ~[paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:344) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:425) [paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:418) [paper.jar:git-Paper-1351]
+	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.disablePlugins(CraftServer.java:355) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.stop(MinecraftServer.java:486) [paper.jar:git-Paper-1351]
+	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:701) [paper.jar:git-Paper-1351]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: b.b
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:156) ~[paper.jar:git-Paper-1351]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:104) ~[paper.jar:git-Paper-1351]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 9 more
+[11:44:40] [Server thread/INFO]: [FlameAPI] Disabling FlameAPI v2.5
+[11:44:40] [Server thread/INFO]: [FlameAPI] [FMod] Mod disabled
+[11:44:40] [Server thread/INFO]: [EssentialsGeoIP] Disabling EssentialsGeoIP vTeamCity
+[11:44:40] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat vTeamCity
+[11:44:40] [Server thread/INFO]: [EssentialsProtect] Disabling EssentialsProtect vTeamCity
+[11:44:40] [Server thread/INFO]: [Essentials] Disabling Essentials vTeamCity
+[11:44:40] [Server thread/INFO]: Saving players
+[11:44:40] [Server thread/INFO]: Saving worlds
+[11:44:40] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[11:44:41] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
+[11:44:41] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end

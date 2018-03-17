@@ -1,0 +1,31 @@
+Error:
+  CouldNotBeFound: '&c%PLAYER% couldn''t be found.'
+  MustBeInGame: '&cYou must be in game to do this.'
+  NoPermission: '&cYou do not have permission to do this.'
+EnabledMessage: '&7[&3Solent&7] &7Server is now protected by &3Solent v%VERSION%'
+Command:
+  Solent:
+    Kick:
+      Owner: '&cYou can''t kick an owner!'
+      Success: '&b%PLAYER%&7 was kicked for hacks.'
+    Crash:
+      Success: '&b%PLAYER%&7 was crashed.'
+      Owner: '&cYou can''t crash an owner!'
+    Ban:
+      Owner: '&cYou can''t ban an owner!'
+      Success: '&b%PLAYER%&7 was banned through Solent.'
+    HiddenUnban:
+      Success: '&b%PLAYER%&7 will no longer crash when they join.'
+      NotBanned: '&c%PLAYER% isn''t hidden banned.'
+    HiddenBan:
+      Owner: '&cYou can''t ban an owner!'
+      Success: '&b%PLAYER%&7 will now crash every time they join.'
+  Help:
+    Format: '&b%EXAMPLE% &f - %DESCRIPTION%'
+    Header: '&e------------------- Page %PAGE% of %PAGES% -------------------'
+ViolationMessage:
+  Prefix: '&7[&3Solent&7] '
+  Body: '&7&3%USER%&7 has been detected with &3%HACK_TYPE%&7! &7(&3%SEVERITY%!&7)
+    &7(&3%PING%&7)'
+  PrefixTooltip:
+  - '&7&lCLICK: &b&lPunish %USER%'
