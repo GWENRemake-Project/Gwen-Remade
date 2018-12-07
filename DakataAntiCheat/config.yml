@@ -8,7 +8,7 @@
 ###################################
 #
 #Prefix
-anticheat-tag: "&8&l[&a&lEmerald&4&ltnt&8&l] &c"
+anticheat-tag: "&c&l&8&l[&4&lGWEN&8&l]&c: "
 #Here is the no permissions message
 #You may customize it to all your needs.
 non-permission: "You don't have permission !"
@@ -163,7 +163,7 @@ Sign:
 NoKnockback:
    enabled: true
    threshold:
-        1: "ba kick <player> gwen &8&l[&a&lEmerald&4&ltnt&8&l]&c: Hacking - NoKnockback"
+        1: "ba kick <player> gwen &c&l&8&l[&4&lGWEN&8&l]&c: Hacking - NoKnockback"
 
 #Should DAC enable fastplace check
 FastPlace:

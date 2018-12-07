@@ -1,13 +1,13 @@
-autoban-time: 5
-silentban: true
+autoban-time: 15
+silentban: false
 bans: 0
 removeFromPluginList: false
 xrayduration: 30
 setback: false
 Spider:
-  max-vl: 5
+  max-vl: 25
   autoban: false
-  enabled: false
+  enabled: true
 Jesus:
   max-vl: 100
   autoban: true
@@ -55,7 +55,7 @@ VClip:
 Phase:
   max-vl: 5
   autoban: false
-  enabled: false
+  enabled: true
 BlockHit:
   max-vl: 5
   autoban: false

@@ -1,0 +1,396 @@
+HackCategories:
+  World:
+    type: 2
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lWorld Hacks'
+    lore:
+    - ''
+    - '&eHacks that involve the world.'
+    - ''
+    - '&7&o(Click: Toggle)'
+  Combat:
+    type: 267
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lCombat Hacks'
+    lore:
+    - ''
+    - '&eHacks that enhance your combat'
+    - '&eskills.'
+    - ''
+    - '&7&o(Click: Toggle)'
+  Movement:
+    type: 309
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lMovement Hacks'
+    lore:
+    - ''
+    - '&eHacks that alter your movement.'
+    - ''
+    - '&7&o(Click: Toggle)'
+  Title: '&0&lPick a Category'
+  HackLoreAddition:
+  - ''
+  - '&7(Click: Toggle Detection)'
+  Miscellaneous:
+    type: 325
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lMiscellaneous Hacks'
+    lore:
+    - ''
+    - '&eHacks that don''t fit into the'
+    - '&eother categories.'
+    - ''
+    - '&7&o(Click: Toggle)'
+PunishMenu:
+  Kick:
+    Name: '&c&lKick'
+    Types:
+    - IRON_DOOR
+    - WOOD_DOOR
+  Ban:
+    Name: '&c&lBan'
+    Types:
+    - SKULL_ITEM
+    - LAVA_BUCKET
+  Teleport:
+    Name: '&a&lTeleport'
+    Types:
+    - ENDER_PEARL
+    - EYE_OF_ENDER
+  Crash:
+    Name: '&c&lCrash'
+    Types:
+    - EMERALD
+    - GOLD_INGOT
+    - DIAMOND
+  Title: '&0&lPunishing %PLAYER%'
+  TargetOffline: '&cYour target has gone offline!'
+PunishmentManager:
+  AnalyseUser:
+    type: 397
+    amount: 1
+    durability: 3
+    meta: true
+    name: '&7&lAnalyse User'
+    Prompt: '&7Type the &bname&7 of the user you wish to analyse as a chat message:'
+    NoRecord: '&cThat user couldn''t be found / doesn''t have any reports of hacking.'
+  Crashing:
+    Enabled:
+      type: 351
+      amount: 1
+      durability: 10
+      meta: true
+      name: '&7&lCrashing: &a&lEnabled'
+      lore:
+      - ''
+      - '&eUsers found to be hacking'
+      - '&e(regardless of the Punishment'
+      - '&eMode) will have their clients'
+      - '&ecrashed.'
+      - ''
+      - '&7&o(Click: Toggle)'
+    Disabled:
+      type: 351
+      amount: 1
+      durability: 8
+      meta: true
+      name: '&7&lCrashing: &c&lDisabled'
+      lore:
+      - ''
+      - '&eUsers found to be hacking'
+      - '&e(regardless of the Punishment'
+      - '&eMode) won''t have their clients'
+      - '&ecrashed.'
+      - ''
+      - '&7&o(Click: Toggle)'
+  Mode:
+    None:
+      type: 7
+      amount: 1
+      durability: 0
+      meta: true
+      name: '&7&lPunishment Mode: &c&lNone'
+      lore:
+      - ''
+      - '&eUsers found to be hacking will'
+      - '&enot be punished.'
+      - ''
+      - '&7&o(Click: Next Mode)'
+    AutoBan:
+      type: 56
+      amount: 1
+      durability: 0
+      meta: true
+      name: '&7&lPunishment Mode: &a&lAuto Ban'
+      lore:
+      - ''
+      - '&eUsers found to be hacking will'
+      - '&ebe auto banned.'
+      - ''
+      - '&7&o(Click: Next Mode)'
+    JudgementDay:
+      type: 331
+      amount: 1
+      durability: 0
+      meta: true
+      name: '&7&lPunishment Mode: &a&lJudgement Day'
+      lore:
+      - ''
+      - '&eUsers found to be hacking will'
+      - '&ebe stored until a judgement day'
+      - '&eis called, which they will be'
+      - '&ebanned on.'
+      - ''
+      - '&7&o(Click: Next Mode)'
+      Manage:
+        type: 76
+        amount: 1
+        durability: 0
+        meta: true
+        name: '&7&lManage Judgement Day'
+        lore:
+        - ''
+        - '&eStart a Judgement Day, view previous'
+        - '&eJudgement Days or undo them.'
+  Ghost:
+    Enabled:
+      type: 351
+      amount: 1
+      durability: 10
+      meta: true
+      name: '&7&lGhost Mode: &a&lEnabled'
+      lore:
+      - ''
+      - '&eHacks will still be detected but'
+      - '&enot actively stopped. This could'
+      - '&emake hackers think there is no'
+      - '&enocheat, which could make them'
+      - '&ehack more.'
+      - ''
+      - '&eSolent ban messages will only be'
+      - '&esent to staff members.'
+      - ''
+      - '&7&o(Click: Toggle)'
+    Disabled:
+      type: 351
+      amount: 1
+      durability: 8
+      meta: true
+      name: '&7&lGhost Mode: &c&lDisabled'
+      lore:
+      - ''
+      - '&eHacks will still be detected and'
+      - '&estop the hacks taking effect.'
+      - ''
+      - '&eSolent ban messages will be'
+      - '&ebroadcasted.'
+      - ''
+      - '&7&o(Click: Toggle)'
+  Title: '&0&lPunishment Manager'
+UserAnalysis:
+  Title: '&0&lAnalysing %NAME%'
+  Report:
+    type: 397
+    amount: 1
+    durability: 3
+    meta: true
+    name: '&7&lDate'
+    lore:
+    - '&e%DATE%'
+    - ''
+    - '&7(Click: View Timeline)'
+  Filler:
+    type: 160
+    amount: 1
+    durability: 15
+    meta: true
+    name: '&0'
+  UserInfo:
+    type: 388
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lName'
+    lore:
+    - '&e%NAME%'
+    - ''
+    - '&7&lUUID:'
+    - '&e%UUID%'
+  PreviousButton:
+    type: 262
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lPrevious Page of Reports'
+  NextButton:
+    type: 262
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lNext Page of Reports'
+JudgementDayManagerBegin:
+  type: 399
+  amount: 1
+  durability: 0
+  meta: true
+  name: '&7&lBegin a Judgement Day'
+AnalysisTimeline:
+  Title: '&0&lTimeline'
+  Level:
+    Low:
+      type: 160
+      amount: 1
+      durability: 5
+      meta: true
+      name: '&a&lLow Risk'
+    None:
+      type: 160
+      amount: 1
+      durability: 15
+      meta: true
+      name: '&0'
+    High:
+      type: 160
+      amount: 1
+      durability: 1
+      meta: true
+      name: '&4&lHacking'
+    Medium:
+      type: 160
+      amount: 1
+      durability: 4
+      meta: true
+      name: '&6&lMedium Risk'
+    Banned:
+      type: 160
+      amount: 1
+      durability: 14
+      meta: true
+      name: '&4&lBANNED'
+  PreviousButton:
+    type: 262
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lRewind %TIMEFRAME%'
+  NextButton:
+    type: 262
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lFast Forward %TIMEFRAME%'
+HackManager:
+  Title: '&0&l%CATEGORY%'
+TrustedUsersManager:
+  User:
+    type: 397
+    amount: 1
+    durability: 3
+    meta: true
+    name: '&e&l%NAME%'
+    lore:
+    - ''
+    - '&7&o(Click: Remove from Trusted Users)'
+  AddUser:
+    type: 388
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&a&lAdd Trusted User'
+    Messages:
+      NotFound: '&cThat user couldn''t be found.'
+      AlreadyOwner: '&cThat user is already an Owner and doesn''t need to be trusted.'
+      Prompt: '&7Type the &bname&7 of the user you wish to make trusted as a chat
+        message:'
+  Title: '&0&lTrusted Users Manager'
+Background:
+  Snake:
+    Speed: 3
+    Size: 5
+    Enabled: true
+    SnakeItem:
+      type: 160
+      amount: 1
+      durability: 14
+      meta: true
+      name: '&0'
+    Filler:
+      type: 160
+      amount: 1
+      durability: 15
+      meta: true
+      name: '&0'
+  Flashing:
+    Enabled: true
+    ItemB:
+      type: 160
+      amount: 1
+      durability: 5
+      meta: true
+      name: '&0'
+    ItemA:
+      type: 160
+      amount: 1
+      durability: 3
+      meta: true
+      name: '&0'
+JudgementDayViewer:
+  Start:
+    type: 388
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&c&lStart Judgement Day'
+    lore:
+    - ''
+    - '&7Number of Judged Users:'
+    - '&e%PLAYERS_LEFT%'
+    - ''
+    - '&7&o(Click: Begin)'
+  NoPlayers:
+    type: 7
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&c&lNo Judged Users'
+    lore:
+    - ''
+    - '&7No users have been judged'
+  Title: '&0&lJudgement Day'
+JudgementDayManager:
+  Title: '&0&lJudgement Day'
+Settings:
+  PunishmentManagement:
+    type: 339
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lManage Punishment'
+  ManageHacks:
+    type: 399
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lManage Hacks'
+  Title: '&0&lSolent Settings'
+  TrustedUserManager:
+    type: 345
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lManage Trusted Users'
+General:
+  Filler:
+    type: 160
+    amount: 1
+    durability: 7
+    meta: true
+    name: '&0'
