@@ -1,3 +1,7 @@
+# Gwen-Remade
+Configs to mimic Gwen's cheat detection.
+---
+
 # GWEN
 
 # Major update comming soon!!

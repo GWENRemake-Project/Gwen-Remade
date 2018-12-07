@@ -11,15 +11,15 @@ play_animation_on:
     animation: GWEN
   TEMP_BAN:
     enabled: true
-    animation: SWORDFALL
+    animation: GWEN
   KICK:
-    enabled: true
+    enabled: false
     animation: GWEN
   MUTE:
-    enabled: true
+    enabled: false
     animation: CAGE
   TEMP_MUTE:
-    enabled: true
+    enabled: false
     animation: CAGE
 Messages:
   animation_start: '&cPlaying animation {0} on {1}!'
