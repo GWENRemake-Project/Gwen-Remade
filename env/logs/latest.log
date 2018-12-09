@@ -1,351 +1,438 @@
-[17:50:45] [Server thread/INFO]: Starting minecraft server version 1.12.2
-[17:50:45] [Server thread/INFO]: Loading properties
-[17:50:45] [Server thread/INFO]: Default game type: SURVIVAL
-[17:50:46] [Server thread/INFO]: This server is running Paper version git-Paper-1593 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[17:50:46] [Server thread/INFO]: Debug logging is disabled
-[17:50:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:50:46] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:50:46] [Server thread/INFO]: Generating keypair
-[17:50:46] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:50:46] [Server thread/INFO]: Using epoll channel type
-[17:50:46] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[17:50:47] [Server thread/ERROR]: Cannot load configuration from stream
-org.bukkit.configuration.InvalidConfigurationException: while scanning for the next token
-found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
- in 'string', line 84, column 1:
-    	enable: true
-    ^
-
-	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:206) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:167) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.plugin.java.JavaPlugin.getConfig(JavaPlugin.java:135) ~[patched_1.12.2.jar:git-Paper-1593]
-	at fr.flynrod.crucial.Crucial.<init>(Crucial.java) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
-	at java.lang.Class.newInstance(Class.java:584) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:94) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:127) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.loadPlugins(CraftServer.java:318) ~[patched_1.12.2.jar:git-Paper-1593]
-	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:222) ~[patched_1.12.2.jar:git-Paper-1593]
-	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616) ~[patched_1.12.2.jar:git-Paper-1593]
+[17:58:28] [User Authenticator #1/INFO]: UUID of player emeraldtnt is 84e46830-e044-4837-988b-18285ab01b8c
+[17:58:28] [Server thread/INFO]: emeraldtnt dragged back: Join teleport
+[17:58:28] [Server thread/INFO]: emeraldtnt[localhost/127.0.0.1:53076] logged in with entity id 89 at ([world]175.5, 68.0, 248.5)
+[17:58:28] [Craft Scheduler Thread - 6/WARN]: [Essentials] File motd.txt does not exist. Creating one for you.
+[17:58:28] [pool-10-thread-1/INFO]: [Essentials] Creating empty config: /home/joseph/Desktop/josephworks/Gwen-Remade/env/plugins/Essentials/userdata/84e46830-e044-4837-988b-18285ab01b8c.yml
+[17:58:29] [Server thread/INFO]: emeraldtnt has made the advancement [Getting an Upgrade]
+[17:58:29] [Server thread/INFO]: CRUCIAL > Loading is finished !
+[17:58:29] [Server thread/INFO]: CRUCIAL > ALERT : You're using a different version than 1.11. Note that this version of Crucial only works at 1.11.
+[17:58:29] [Netty Epoll Server IO #2/ERROR]: [AACAdditionPro] Unhandled exception occured in onPacketReceiving(PacketEvent) for AACAdditionPro
+java.lang.NoSuchMethodError: com.comphenix.protocol.events.PacketEvent.isPlayerTemporary()Z
+	at de.photon.AACAdditionPro.c.onPacketReceiving(c.java:4) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeReceivingListener(SortedPacketListenerList.java:114) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketRecieving(SortedPacketListenerList.java:67) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.handlePacket(PacketFilterManager.java:590) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketRecieving(PacketFilterManager.java:557) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.packetReceived(ProtocolInjector.java:352) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.onPacketReceiving(ProtocolInjector.java:317) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ChannelInjector.decode(ChannelInjector.java:531) ~[?:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at com.comphenix.protocol.injector.netty.ChannelInjector$4.channelRead(ChannelInjector.java:263) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:808) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:404) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:304) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[patched_1.12.2.jar:git-Paper-1593]
 	at java.lang.Thread.run(Thread.java:834) [?:?]
-Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning for the next token
-found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
- in 'string', line 84, column 1:
-    	enable: true
-    ^
+[17:58:29] [Netty Epoll Server IO #2/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayInFlying$PacketPlayInPositionLook@4a536213[
+    x=175.5
+    y=68.0
+    z=248.5
+    yaw=2.9017186
+    pitch=0.0
+    f=false
+    hasPos=true
+    hasLook=true
+  ]
 
-	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:421) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:226) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:585) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:157) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:147) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:133) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:249) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:240) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:228) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:154) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.composeDocument(Composer.java:122) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:105) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:140) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:524) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.yaml.snakeyaml.Yaml.load(Yaml.java:437) ~[patched_1.12.2.jar:git-Paper-1593]
-	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:53) ~[patched_1.12.2.jar:git-Paper-1593]
-	... 18 more
-[17:50:47] [Server thread/INFO]: [Essentials] Loading Essentials vTeamCity
-[17:50:47] [Server thread/INFO]: [EssentialsProtect] Loading EssentialsProtect vTeamCity
-[17:50:47] [Server thread/INFO]: [EssentialsGeoIP] Loading EssentialsGeoIP vTeamCity
-[17:50:47] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat vTeamCity
-[17:50:47] [Server thread/INFO]: [FlameAPI] Loading FlameAPI v2.5
-[17:50:47] [Server thread/INFO]: [Autoeye] Loading Autoeye v0.69A
-[17:50:47] [Server thread/INFO]: [PlugMan] Loading PlugMan v2.1.5
-[17:50:47] [Server thread/INFO]: [BanAnimations] Loading BanAnimations v2.1.0
-[17:50:47] [Server thread/INFO]: [BanWaves] Loading BanWaves v1.0-Stable
-[17:50:47] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn vTeamCity
-[17:50:47] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.3.0
-[17:50:47] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.12.2) has not yet been tested! Proceed with caution.
-[17:50:47] [Server thread/INFO]: [AAC] Loading AAC v3.5.0
-[17:50:47] [Server thread/INFO]: [DakataAntiCheat] Loading DakataAntiCheat vBETA 2.0
-[17:50:47] [Server thread/INFO]: [PAC] Loading PAC v1.3.0
-[17:50:47] [Server thread/INFO]: [TakaAntiCheat] Loading TakaAntiCheat v3.1.1
-[17:50:47] [Server thread/INFO]: [AACAdditionPro] Loading AACAdditionPro v4.5.0
-[17:50:47] [Server thread/INFO]: [AntiAura] Loading AntiAura v11.41
-[17:50:47] [Server thread/INFO]: [Crucial] Loading Crucial v1.5.7
-[17:50:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:50:47] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.3.0
-[17:50:47] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
-[17:50:47] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[17:50:47] [Server thread/INFO]: Preparing level "world"
-[17:50:47] [Server thread/INFO]: -------- World Settings For [world] --------
-[17:50:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[17:50:47] [Server thread/INFO]: Mob Spawn Range: 4
-[17:50:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:50:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[17:50:47] [Server thread/INFO]: Random Lighting Updates: false
-[17:50:47] [Server thread/INFO]: Structure Info Saving: true
-[17:50:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[17:50:47] [Server thread/INFO]: Max TNT Explosions: 100
-[17:50:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[17:50:47] [Server thread/INFO]: Item Despawn Rate: 6000
-[17:50:47] [Server thread/INFO]: Item Merge Radius: 2.5
-[17:50:47] [Server thread/INFO]: View Distance: 10
-[17:50:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[17:50:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:50:47] [Server thread/INFO]: Experience Merge Radius: 3.0
-[17:50:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:50:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:50:47] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[17:50:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[17:50:47] [Server thread/INFO]: Mob Spawn Range: 4
-[17:50:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:50:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[17:50:47] [Server thread/INFO]: Random Lighting Updates: false
-[17:50:47] [Server thread/INFO]: Structure Info Saving: true
-[17:50:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[17:50:47] [Server thread/INFO]: Max TNT Explosions: 100
-[17:50:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[17:50:47] [Server thread/INFO]: Item Despawn Rate: 6000
-[17:50:47] [Server thread/INFO]: Item Merge Radius: 2.5
-[17:50:47] [Server thread/INFO]: View Distance: 10
-[17:50:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[17:50:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:50:47] [Server thread/INFO]: Experience Merge Radius: 3.0
-[17:50:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:50:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:50:47] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[17:50:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Cane Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Melon Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Vine Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[17:50:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16 / Tiv true
-[17:50:47] [Server thread/INFO]: Mob Spawn Range: 4
-[17:50:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[17:50:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[17:50:47] [Server thread/INFO]: Random Lighting Updates: false
-[17:50:47] [Server thread/INFO]: Structure Info Saving: true
-[17:50:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[17:50:47] [Server thread/INFO]: Max TNT Explosions: 100
-[17:50:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[17:50:47] [Server thread/INFO]: Item Despawn Rate: 6000
-[17:50:47] [Server thread/INFO]: Item Merge Radius: 2.5
-[17:50:47] [Server thread/INFO]: View Distance: 10
-[17:50:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[17:50:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[17:50:47] [Server thread/INFO]: Experience Merge Radius: 3.0
-[17:50:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[17:50:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[17:50:47] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3054790934260647074)
-[17:50:48] [Server thread/INFO]: Preparing spawn area: 40%
-[17:50:48] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3054790934260647074)
-[17:50:49] [Server thread/INFO]: Preparing start region for level 2 (Seed: 3054790934260647074)
-[17:50:49] [Server thread/INFO]: [Essentials] Enabling Essentials vTeamCity
-[17:50:49] [Server thread/WARN]: [Essentials] Ignoring attempt to change parent of plugin logger
-[17:50:49] [Server thread/INFO]: [Essentials] Bukkit version format changed. Version not checked.
-[17:50:49] [Server thread/INFO]: [Essentials] git-Paper-1593 (MC: 1.12.2)
-[17:50:49] [Server thread/INFO]: [Essentials] 1.12.2-R0.1-SNAPSHOT
-[17:50:49] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
-[17:50:49] [Server thread/INFO]: [Essentials] Using locale en_US
-[17:50:49] [Server thread/INFO]: [Essentials] Using locale en_US
-[17:50:49] [Server thread/INFO]: [Essentials] Essentials: Using config file enhanced permissions.
-[17:50:49] [Server thread/INFO]: [Essentials] Permissions listed in as player-commands will be given to all users.
-[17:50:49] [Server thread/INFO]: [EssentialsProtect] Enabling EssentialsProtect vTeamCity
-[17:50:49] [Server thread/INFO]: [EssentialsGeoIP] Enabling EssentialsGeoIP vTeamCity
-[17:50:49] [Server thread/INFO]: [EssentialsGeoIP] This product includes GeoLite data created by MaxMind, available from http://www.maxmind.com/.
-[17:50:49] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat vTeamCity
-[17:50:49] [Server thread/INFO]: [FlameAPI] Enabling FlameAPI v2.5
-[17:50:49] [Server thread/INFO]: [FlameAPI] [FMod] Mod enabled.
-[17:50:49] [Server thread/INFO]: [Autoeye] Enabling Autoeye v0.69A
-[17:50:49] [Server thread/INFO]: [PlugMan] Enabling PlugMan v2.1.5
-[17:50:49] [Server thread/INFO]: [BanAnimations] Enabling BanAnimations v2.1.0
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation cage has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation carfall has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation explode has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation freeze has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation gwen has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation lightning has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation spit has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation meteor has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation pig has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation swordfall has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation snaptrap has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] Animation yinyang has been loaded!
-[17:50:49] [Server thread/INFO]: [BanAnimations] BanAnimations has been enabled! (V.2.1.0)
-[17:50:49] [Server thread/INFO]: [BanWaves] Enabling BanWaves v1.0-Stable
-[17:50:49] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn vTeamCity
-[17:50:49] [Server thread/INFO]: [AAC] Enabling AAC v3.5.0
-[17:50:50] [Server thread/INFO]: [AAC] No internet connection.
-[17:50:50] [Server thread/INFO]: [DakataAntiCheat] Enabling DakataAntiCheat vBETA 2.0
-[17:50:50] [Server thread/INFO]: [GWEN]: Another AC detected, this plugin may cause false positives with other AC's
-[17:50:50] [Server thread/INFO]: [PAC] Enabling PAC v1.3.0
-[17:50:50] [Server thread/INFO]: [PAC] Enabled 14 modules
-[17:50:50] [Server thread/INFO]: [TakaAntiCheat] Enabling TakaAntiCheat v3.1.1
-[17:50:50] [Server thread/INFO]: [GWEN]:  ******************************
-[17:50:50] [Server thread/INFO]: [GWEN]:  Welcome to Taka Anti Cheat
-[17:50:50] [Server thread/INFO]: [GWEN]:  This anticheat is still BETA
-[17:50:50] [Server thread/INFO]: [GWEN]:  Report bugs to @dani02
-[17:50:50] [Server thread/INFO]: [GWEN]:  ******************************
-[17:50:50] [Server thread/INFO]: [GWEN]:  Register Events...
-[17:50:50] [Server thread/INFO]: [GWEN]:  Events Registered!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Starting VL Cleaner...
-[17:50:50] [Server thread/INFO]: [GWEN]:  VL Cleaner Started!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Loading Players...
-[17:50:50] [Server thread/INFO]: [GWEN]:  Players Loaded!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Loading Config...
-[17:50:50] [Server thread/INFO]: [GWEN]:  Reports loaded!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Config Loaded!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Hooking to ProtocolLib...
-[17:50:50] [Server thread/INFO]: [GWEN]:  Hooked to ProtocolLib!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Loading WTDT...
-[17:50:50] [Server thread/INFO]: [GWEN]:  WTDT Loaded!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Loading LSW...
-[17:50:50] [Server thread/INFO]: [GWEN]:  LSW Loaded!
-[17:50:50] [Server thread/INFO]: [GWEN]:  Taka has been started(66ms)
-[17:50:50] [Server thread/INFO]: [AACAdditionPro] Enabling AACAdditionPro v4.5.0
-[17:50:50] [Server thread/INFO]: [AACAdditionPro] Enabling plugin...
-[17:50:50] [Server thread/ERROR]: [AACAdditionPro] Loading failed:
-[17:50:50] [Server thread/WARN]: java.lang.NullPointerException: Severe loading error: Config-Section is null when loading: ImpossibleChat.thresholds
-[17:50:50] [Server thread/WARN]: 	at java.base/java.util.Objects.requireNonNull(Objects.java:246)
-[17:50:50] [Server thread/WARN]: 	at de.photon.AACAdditionPro.a5.b(a5.java:6)
-[17:50:50] [Server thread/WARN]: 	at de.photon.AACAdditionPro.ca.a(ca.java:7)
-[17:50:50] [Server thread/WARN]: 	at de.photon.AACAdditionPro.cb.<init>(cb.java:29)
-[17:50:50] [Server thread/WARN]: 	at de.photon.AACAdditionPro.modules.S.<init>(S.java:5)
-[17:50:50] [Server thread/WARN]: 	at de.photon.AACAdditionPro.AACAdditionPro.onEnable(AACAdditionPro.java:42)
-[17:50:50] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
-[17:50:50] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:316)
-[17:50:50] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:405)
-[17:50:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:395)
-[17:50:50] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:344)
-[17:50:50] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:442)
-[17:50:50] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:403)
-[17:50:50] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:341)
-[17:50:50] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:289)
-[17:50:50] [Server thread/WARN]: 	at net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:616)
-[17:50:50] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:834)
-[17:50:50] [Server thread/INFO]: [AntiAura] Enabling AntiAura v11.41
-[17:50:50] [Server thread/INFO]: Hello, and welcome to AntiAura! Please refer to the guides on Spigot or send me a PM if you are having issues! If you want configuration help, check the logs or the config comments!
-[17:50:50] [Server thread/INFO]: By using this plugin, you agree with the EULA.txt inside the jar file.
-[17:50:50] [Server thread/INFO]: Paths: /home/joseph/Desktop/josephworks/Gwen-Remade/env/plugins/AntiAura/config.yml || 
-[17:50:50] [Server thread/INFO]: [Crucial] Enabling Crucial v1.5.7
-[17:50:50] [Server thread/INFO]: 
-[17:50:50] [Server thread/INFO]:    _____                 _       _ 
-[17:50:50] [Server thread/INFO]:   / ____|               (_)     | |
-[17:50:50] [Server thread/INFO]:  | |     _ __ _   _  ___ _  __ _| |
-[17:50:50] [Server thread/INFO]:  | |    | '__| | | |/ __| |/ _` | |
-[17:50:50] [Server thread/INFO]:  | |____| |  | |_| | (__| | (_| | |
-[17:50:50] [Server thread/INFO]:   \_____|_|   \__,_|\___|_|\__,_|_|
-[17:50:50] [Server thread/INFO]: 
-[17:50:50] [Server thread/INFO]:      (c) Developed by Flynrod
-[17:50:50] [Server thread/INFO]: 
-[17:50:51] [Server thread/INFO]: CRUCIAL > Please wait...
-[17:50:51] [Server thread/INFO]: Done (3.866s)! For help, type "help" or "?"
-[17:50:51] [Server thread/INFO]: Timings Reset
-[17:50:51] [Server thread/INFO]: [AAC] Beginning Enable...
-[17:50:51] [Server thread/INFO]: [AAC] Checking config file...
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check chat.Spam
-[17:50:51] [Craft Scheduler Thread - 0/INFO]: [DakataAntiCheat] WARNING: There is a new update for DAC
-[17:50:51] [Craft Scheduler Thread - 0/INFO]: [DakataAntiCheat] WARNING: Current version BETA 2.0
-[17:50:51] [Craft Scheduler Thread - 0/INFO]: [DakataAntiCheat] WARNING: New version 1.0.5
-[17:50:51] [Craft Scheduler Thread - 0/INFO]: [DakataAntiCheat] Thank you for using DAC
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Hitbox
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Fastbow
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.FightSpeed
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Check combat.Knockback is disabled
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Regen
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.FastUse
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Killaura
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Speed
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Phase
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Fly
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Vehicles
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Elytra
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.NoFall
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Jesus
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check movement.Derp
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check combat.Criticals
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.FastBreak
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.FastPlace
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.Nuker
-[17:50:51] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.NoSwing
-[17:50:52] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.Interact
-[17:50:52] [Server thread/INFO]: [AAC] (CheckManager) Enabling check world.Velocity
-[17:50:52] [Server thread/INFO]: [AAC] (CheckManager) Enabling check MovementManager
-[17:50:52] [Server thread/INFO]: [AAC] Starting API...
-[17:50:52] [Server thread/INFO]: [AAC] AAC has been enabled.
-[17:50:56] [Server thread/INFO]: CRUCIAL > Loading is finished !
-[17:50:56] [Server thread/INFO]: CRUCIAL > ALERT : You're using a different version than 1.11. Note that this version of Crucial only works at 1.11.
-[17:51:06] [Server thread/INFO]: Plugins (18): AAC, AACAdditionPro, AntiAura, Autoeye, BanAnimations, BanWaves, Crucial, DakataAntiCheat, Essentials, EssentialsChat, EssentialsGeoIP, EssentialsProtect, EssentialsSpawn, FlameAPI, PAC, PlugMan, ProtocolLib, TakaAntiCheat
-[17:52:36] [Server thread/INFO]: >> Mod commands...
-[17:52:36] [Server thread/INFO]: > /mod ban <Player>
-[17:52:36] [Server thread/INFO]: > /mod unban <Player>
-[17:52:36] [Server thread/INFO]: > /mod check <Player>
-[17:52:36] [Server thread/INFO]: > /mod kick <Player>
-[17:52:36] [Server thread/INFO]: > /mod info <Player>
-[17:52:56] [Server thread/INFO]: Stopping the server
-[17:52:56] [Server thread/INFO]: Stopping server
-[17:52:56] [Server thread/INFO]: [Crucial] Disabling Crucial v1.5.7
-[17:52:56] [Server thread/INFO]: Crucial > Crucial has been disabled !
-[17:52:56] [Server thread/INFO]: [AntiAura] Disabling AntiAura v11.41
-[17:52:56] [Server thread/INFO]: Please ignore any errors here - They are harmless and are almost unfixable.
-[17:52:56] [Server thread/INFO]: [AACAdditionPro] Disabling AACAdditionPro v4.5.0
-[17:52:56] [Server thread/INFO]: [AACAdditionPro] AACAdditionPro disabled.
-[17:52:56] [Server thread/INFO]: [AACAdditionPro]  
-[17:52:56] [Server thread/INFO]: [TakaAntiCheat] Disabling TakaAntiCheat v3.1.1
-[17:52:56] [Server thread/INFO]: [PAC] Disabling PAC v1.3.0
-[17:52:56] [Server thread/INFO]: [DakataAntiCheat] Disabling DakataAntiCheat vBETA 2.0
-[17:52:56] [Server thread/INFO]: [AAC] Disabling AAC v3.5.0
-[17:52:56] [Server thread/INFO]: [AAC] Disabling checks...
-[17:52:56] [Server thread/INFO]: [AAC] Saving log file...
-[17:52:56] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.3.0
-[17:52:56] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn vTeamCity
-[17:52:56] [Server thread/INFO]: [BanWaves] Disabling BanWaves v1.0-Stable
-[17:52:56] [Server thread/INFO]: [BanAnimations] Disabling BanAnimations v2.1.0
-[17:52:56] [Server thread/INFO]: BanAnimations has been disabled!
-[17:52:56] [Server thread/INFO]: [PlugMan] Disabling PlugMan v2.1.5
-[17:52:56] [Server thread/INFO]: [Autoeye] Disabling Autoeye v0.69A
-[17:52:56] [Server thread/INFO]: [FlameAPI] Disabling FlameAPI v2.5
-[17:52:56] [Server thread/INFO]: [FlameAPI] [FMod] Mod disabled
-[17:52:56] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat vTeamCity
-[17:52:56] [Server thread/INFO]: [EssentialsGeoIP] Disabling EssentialsGeoIP vTeamCity
-[17:52:56] [Server thread/INFO]: [EssentialsProtect] Disabling EssentialsProtect vTeamCity
-[17:52:56] [Server thread/INFO]: [Essentials] Disabling Essentials vTeamCity
-[17:52:56] [Server thread/INFO]: Saving players
-[17:52:56] [Server thread/INFO]: Saving worlds
-[17:52:56] [Server thread/INFO]: Saving chunks for level 'world'/overworld
-[17:52:56] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
-[17:52:56] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
+[17:58:29] [Netty Epoll Server IO #2/ERROR]: [AACAdditionPro] Unhandled exception occured in onPacketReceiving(PacketEvent) for AACAdditionPro
+java.lang.NoSuchMethodError: com.comphenix.protocol.events.PacketEvent.isPlayerTemporary()Z
+	at de.photon.AACAdditionPro.c.onPacketReceiving(c.java:4) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeReceivingListener(SortedPacketListenerList.java:114) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketRecieving(SortedPacketListenerList.java:67) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.handlePacket(PacketFilterManager.java:590) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketRecieving(PacketFilterManager.java:557) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.packetReceived(ProtocolInjector.java:352) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.onPacketReceiving(ProtocolInjector.java:317) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ChannelInjector.decode(ChannelInjector.java:531) ~[?:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at com.comphenix.protocol.injector.netty.ChannelInjector$4.channelRead(ChannelInjector.java:263) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:808) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:404) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:304) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[patched_1.12.2.jar:git-Paper-1593]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[17:58:29] [Netty Epoll Server IO #2/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayInFlying$PacketPlayInPositionLook@1c166f06[
+    x=175.5
+    y=68.0
+    z=248.5
+    yaw=2.9017186
+    pitch=0.0
+    f=false
+    hasPos=true
+    hasLook=true
+  ]
+
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: [AACAdditionPro] Unhandled exception occured in onPacketReceiving(PacketEvent) for AACAdditionPro
+java.lang.NoSuchMethodError: com.comphenix.protocol.events.PacketEvent.isPlayerTemporary()Z
+	at de.photon.AACAdditionPro.c.onPacketReceiving(c.java:4) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeReceivingListener(SortedPacketListenerList.java:114) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketRecieving(SortedPacketListenerList.java:67) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.handlePacket(PacketFilterManager.java:590) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketRecieving(PacketFilterManager.java:557) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.packetReceived(ProtocolInjector.java:352) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.onPacketReceiving(ProtocolInjector.java:317) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ChannelInjector.decode(ChannelInjector.java:531) ~[?:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at com.comphenix.protocol.injector.netty.ChannelInjector$4.channelRead(ChannelInjector.java:263) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:297) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:413) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:808) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:404) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:304) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[patched_1.12.2.jar:git-Paper-1593]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayInFlying$PacketPlayInPositionLook@168052e1[
+    x=175.5
+    y=68.0
+    z=248.5
+    yaw=2.9017186
+    pitch=0.0
+    f=false
+    hasPos=true
+    hasLook=true
+  ]
+
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: [AACAdditionPro] Unhandled exception occured in onPacketReceiving(PacketEvent) for AACAdditionPro
+java.lang.NoSuchMethodError: com.comphenix.protocol.events.PacketEvent.isPlayerTemporary()Z
+	at de.photon.AACAdditionPro.c.onPacketReceiving(c.java:4) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeReceivingListener(SortedPacketListenerList.java:114) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketRecieving(SortedPacketListenerList.java:67) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.handlePacket(PacketFilterManager.java:590) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketRecieving(PacketFilterManager.java:557) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.packetReceived(ProtocolInjector.java:352) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.onPacketReceiving(ProtocolInjector.java:317) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ChannelInjector.decode(ChannelInjector.java:531) ~[?:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at com.comphenix.protocol.injector.netty.ChannelInjector$4.channelRead(ChannelInjector.java:263) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:808) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:404) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:304) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[patched_1.12.2.jar:git-Paper-1593]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayInFlying$PacketPlayInPositionLook@7207a82[
+    x=171.5
+    y=64.0
+    z=254.5
+    yaw=0.0
+    pitch=0.0
+    f=false
+    hasPos=true
+    hasLook=true
+  ]
+
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: [AACAdditionPro] Unhandled exception occured in onPacketReceiving(PacketEvent) for AACAdditionPro
+java.lang.NoSuchMethodError: com.comphenix.protocol.events.PacketEvent.isPlayerTemporary()Z
+	at de.photon.AACAdditionPro.c.onPacketReceiving(c.java:4) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeReceivingListener(SortedPacketListenerList.java:114) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketRecieving(SortedPacketListenerList.java:67) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.handlePacket(PacketFilterManager.java:590) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketRecieving(PacketFilterManager.java:557) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.packetReceived(ProtocolInjector.java:352) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.onPacketReceiving(ProtocolInjector.java:317) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ChannelInjector.decode(ChannelInjector.java:531) ~[?:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at com.comphenix.protocol.injector.netty.ChannelInjector$4.channelRead(ChannelInjector.java:263) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:808) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:404) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:304) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[patched_1.12.2.jar:git-Paper-1593]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayInFlying$PacketPlayInPositionLook@13a327dd[
+    x=171.5
+    y=64.0
+    z=254.5
+    yaw=0.0
+    pitch=0.0
+    f=false
+    hasPos=true
+    hasLook=true
+  ]
+
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: [AACAdditionPro] Unhandled exception occured in onPacketReceiving(PacketEvent) for AACAdditionPro
+java.lang.NoSuchMethodError: com.comphenix.protocol.events.PacketEvent.isPlayerTemporary()Z
+	at de.photon.AACAdditionPro.c.onPacketReceiving(c.java:4) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeReceivingListener(SortedPacketListenerList.java:114) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketRecieving(SortedPacketListenerList.java:67) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.handlePacket(PacketFilterManager.java:590) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketRecieving(PacketFilterManager.java:557) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.packetReceived(ProtocolInjector.java:352) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.onPacketReceiving(ProtocolInjector.java:317) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ChannelInjector.decode(ChannelInjector.java:531) ~[?:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at com.comphenix.protocol.injector.netty.ChannelInjector$4.channelRead(ChannelInjector.java:263) ~[?:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1434) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:965) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:808) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:404) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:304) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) ~[patched_1.12.2.jar:git-Paper-1593]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: Parameters: 
+  net.minecraft.server.v1_12_R1.PacketPlayInFlying$PacketPlayInPosition@5cfb6ed1[
+    x=171.5
+    y=64.0
+    z=254.5
+    yaw=0.0
+    pitch=0.0
+    f=true
+    hasPos=true
+    hasLook=false
+  ]
+
+[17:58:30] [Craft Scheduler Thread - 1/ERROR]: Could not pass event PlayerTeleportEvent to AAC v3.5.0
+org.bukkit.event.EventException: null
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:72) ~[patched_1.12.2.jar:git-Paper-1593]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:74) ~[patched_1.12.2.jar:git-Paper-1593]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62) ~[patched_1.12.2.jar:git-Paper-1593]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:513) ~[patched_1.12.2.jar:git-Paper-1593]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer.teleport(CraftPlayer.java:627) ~[patched_1.12.2.jar:git-Paper-1593]
+	at org.bukkit.craftbukkit.v1_12_R1.entity.CraftEntity.teleport(CraftEntity.java:310) ~[patched_1.12.2.jar:git-Paper-1593]
+	at TAKA.ꛢꚲꛇꚠꚤꛤꚢꚿꛚꛑꛏꛃꚫꛑꚣꚯꛍꚫꚫꛨꚭꛌꛪꛭꚪꚼꚰꛧꛪꛖꚻꛏꚰꛝꚼꚠꛎꛃꚹꛋꛉꚸꚳꛃꛚꚣꛃꛆꚠꚡꛔꛍꛝꚵꛕꚽꛮꚹꚠꚿꛥꚹꚣꛜꚣꚪꛪꚥꛓꛠꛇꛣꛕꚬꛫꚴꛃꛪꛝꚳꚧꛒꛈꚲꛆꚴꛧꚡꚦꛛꛯꛋꛎꛡꚱꚪꚵꛕꚧꛯꛡꚭꛋꛥꚣꚰꚵꛕꚣꛒꚸꛭꛪꛏꛅꛊꛢꛌꛞꚠꛋꚪꛟꚵꚫꚴꛇꛫꚾꚣꛢꚭꛄꚲꛗꛉꛟꚵꛅꚥꛎꛢꚾꛇꛬꚥꛨꛕꚫꚠꚳꚤꛖꚯꛈꚪꛭꚷꛁꚡꛕꛮꛁꛛꛡꛭꛫꚳꚶꚹꛤꚪꛫꛗꚵꚩꛣꚦꚼꛩꛡꛉꛈꚴꛆꛅꚣꚫꛣꚡꛒꛯꛛꛃꛌꛍꚡꚧꛖꛇꚶꛫꛥꚧꛅꛓꚢꚠꛥꛎꚿꚱꛭꛬꚫꛁꛢꛘꛦꛡꛖꛢꛄꛯꛇꛏꛉꛘꛡꛄꛐꛎꚣꛡꛀꚫꚫꚶꛮꛔꚯꚲꛑꛎꛯꚺꚩꛆꛚꚻꚨꛯꛐꚰꛤꛥꚲꚡꛆꚡꛆꛙꚸꚵꚾꛞꛬꛋꛨꛞꚢꛆꚵꚯꛝꚤꛆꛍꚡꛜꚼꚧꛭꚫꛗꚰꛋꛊꛔꚩꚰꛣꛜꚿꛃꛫꚦꛔꛐꛉꛠꚦꚦꛗꛋꛧꚭꛧꚰꚠꚷꚴꛄꛞꚷꚾꛭꚾꚿꚨꛟꛬꚨꛋꚾꛗꛍꛞꚼꛘꛤꚩꛛꛏꛍꛮꚷꛞꚼꚻꛕꛉꚿꚾꚷꛝꛮꛜꚻꚮꚣꛨꚧꚸꚫꚻꛡꛪꛈꚽꚪꛕꛤꚡꚫꛏꚶꛥꚿꛦꛗꛎꛘꛉꛩꚸꛥꛔꚥꚣꛥꛇ.run(al.java) ~[?:?]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:63) ~[patched_1.12.2.jar:git-Paper-1593]
+	at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) ~[patched_1.12.2.jar:git-Paper-1593]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[patched_1.12.2.jar:git-Paper-1593]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.lang.IllegalStateException: Must be called from the main thread
+	at me.konsolas.aac.aY.a(aY.java:3) ~[?:?]
+	at me.konsolas.aac.cK.a(cK.java:6) ~[?:?]
+	at me.konsolas.aac.aY.a(aY.java:120) ~[?:?]
+	at me.konsolas.aac.aY.a(aY.java:46) ~[?:?]
+	at me.konsolas.aac.cr.a(cr.java:100) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor226.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70) ~[patched_1.12.2.jar:git-Paper-1593]
+	... 12 more
+[17:58:30] [Netty Epoll Server IO #2/ERROR]: [AACAdditionPro] Unhandled exception occured in onPacketReceiving(PacketEvent) for AACAdditionPro
+java.lang.NoSuchMethodError: com.comphenix.protocol.events.PacketEvent.isPlayerTemporary()Z
+	at de.photon.AACAdditionPro.c.onPacketReceiving(c.java:4) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokeReceivingListener(SortedPacketListenerList.java:114) ~[?:?]
+	at com.comphenix.protocol.injector.SortedPacketListenerList.invokePacketRecieving(SortedPacketListenerList.java:67) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.handlePacket(PacketFilterManager.java:590) ~[?:?]
+	at com.comphenix.protocol.injector.PacketFilterManager.invokePacketRecieving(PacketFilterManager.java:557) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.packetReceived(ProtocolInjector.java:352) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ProtocolInjector.onPacketReceiving(ProtocolInjector.java:317) ~[?:?]
+	at com.comphenix.protocol.injector.netty.ChannelInjector.decode(ChannelInjector.java:531) ~[?:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:489) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:428) ~[patched_1.12.2.jar:git-Paper-1593]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:265) ~[patched_1.12.2.jar:git-Paper-1593]
+
+[17:58:40] [Server thread/INFO]: CONSOLE issued server command: /kick emeraldtnt &4&lGWEN&c: You are using hacks!!
+[17:58:40] [Server thread/INFO]: emeraldtnt lost connection: GWEN: You are using hacks!!
+[17:58:40] [Server thread/INFO]: emeraldtnt left the game
+[17:58:40] [Server thread/INFO]: Player Console kicked emeraldtnt for GWEN: You are using hacks!!.
+[17:58:40] [Server thread/WARN]: handleDisconnection() called twice
+[17:58:58] [Server thread/INFO]: Stopping the server
+[17:58:58] [Server thread/INFO]: Stopping server
+[17:58:58] [Server thread/INFO]: [Crucial] Disabling Crucial v1.5.7
+[17:58:58] [Server thread/INFO]: Crucial > Crucial has been disabled !
+[17:58:58] [Server thread/INFO]: [AntiAura] Disabling AntiAura v11.41
+[17:58:58] [Server thread/INFO]: Please ignore any errors here - They are harmless and are almost unfixable.
+[17:58:58] [Server thread/INFO]: [AACAdditionPro] Disabling AACAdditionPro v4.5.0
+[17:58:58] [Server thread/INFO]: [AACAdditionPro] AACAdditionPro disabled.
+[17:58:58] [Server thread/INFO]: [AACAdditionPro]  
+[17:58:58] [Server thread/INFO]: [TakaAntiCheat] Disabling TakaAntiCheat v3.1.1
+[17:58:58] [Server thread/INFO]: [PAC] Disabling PAC v1.3.0
+[17:58:58] [Server thread/INFO]: [DakataAntiCheat] Disabling DakataAntiCheat vBETA 2.0
+[17:58:59] [Server thread/INFO]: [AAC] Disabling AAC v3.5.0
+[17:58:59] [Server thread/INFO]: [AAC] Disabling checks...
+[17:58:59] [Server thread/INFO]: [AAC] Saving log file...
+[17:58:59] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.3.0
+[17:58:59] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn vTeamCity
+[17:58:59] [Server thread/INFO]: [BanWaves] Disabling BanWaves v1.0-Stable
+[17:58:59] [Server thread/INFO]: [BanAnimations] Disabling BanAnimations v2.1.0
+[17:58:59] [Server thread/INFO]: BanAnimations has been disabled!
+[17:58:59] [Server thread/INFO]: [PlugMan] Disabling PlugMan v2.1.5
+[17:58:59] [Server thread/INFO]: [Autoeye] Disabling Autoeye v0.69A
+[17:58:59] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat vTeamCity
+[17:58:59] [Server thread/INFO]: [EssentialsGeoIP] Disabling EssentialsGeoIP vTeamCity
+[17:58:59] [Server thread/INFO]: [EssentialsProtect] Disabling EssentialsProtect vTeamCity
+[17:58:59] [Server thread/INFO]: [Essentials] Disabling Essentials vTeamCity
+[17:58:59] [Server thread/INFO]: Saving players
+[17:58:59] [Server thread/INFO]: Saving worlds
+[17:58:59] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[17:58:59] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
+[17:58:59] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
