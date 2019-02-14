@@ -1,0 +1,35 @@
+Punishment:
+  Ban:
+    Command: /ban <player> &7[&3Solent&7]&f Unfair Advantage (<reason>)
+    DefaultReason: Cheats Detected
+  Mode: AUTOBAN
+  Kick:
+    Command: '/kick <player> &7[&3Solent&7]&f Kicked: Disable your Hacks'
+  CrashHackers: false
+  AutoBan:
+    Messages:
+    - '&7[&3Solent&7] &3%USER%&7 was eaten by &3Solent'
+    - '&7[&3Solent&7] &3%USER%&7 was eaten alive by &3Solent'
+    - '&7[&3Solent&7] &3%USER%&7 was slain by &3Solent'
+    - '&7[&3Solent&7] &3%USER%&7 was no match for &3Solent'
+    - '&7[&3Solent&7] &3%USER%&7 was trying to be sneaky, but failed'
+    - '&7[&3Solent&7] &3%USER%&7 has been detected cheating'
+    - '&7[&3Solent&7] &3%USER%&7 has been detected hacking'
+    - '&7[&3Solent&7] &3%USER%&7 got busted'
+    - '&7[&3Solent&7] &3%USER%&7 failed to bypass &3Solent'
+    - '&7[&3Solent&7] &3%USER%&7 just got doo-diddly-detecterino''d'
+    - '&7[&3Solent&7] &3Solent&7 sent &3%USER%&7 to the grave'
+    - '&7[&3Solent&7] &3Solent&7 cut &3%USER%&7 to pieces'
+    - '&7[&3Solent&7] &3Solent&7 swept the floor with &3%USER%'
+    - '&7[&3Solent&7] ''&oHow not to hack&7'' - written by &3%USER%'
+Violation:
+  AntiSpam:
+    Delay: 1500
+    Enabled: true
+Users:
+  Owners:
+  - Twyzl
+  Trusted:
+  - Positivity
+  - Elitist
+GhostMode: false

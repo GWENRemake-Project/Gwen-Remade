@@ -1,0 +1,43 @@
+[08-12-2018 17:58:23.916] (CheckManager) Enabled check chat.Spam
+[08-12-2018 17:58:23.937] (CheckManager) Enabled check combat.Hitbox
+[08-12-2018 17:58:23.943] (CheckManager) Enabled check combat.Fastbow
+[08-12-2018 17:58:23.946] (CheckManager) Enabled check combat.FightSpeed
+[08-12-2018 17:58:23.950] (CheckManager) Enabled check combat.Regen
+[08-12-2018 17:58:23.955] (CheckManager) Enabled check combat.FastUse
+[08-12-2018 17:58:24.015] (CheckManager) Enabled check combat.Killaura
+[08-12-2018 17:58:24.061] (CheckManager) Enabled check movement.Speed
+[08-12-2018 17:58:24.065] (CheckManager) Enabled check movement.Phase
+[08-12-2018 17:58:24.083] (CheckManager) Enabled check movement.Fly
+[08-12-2018 17:58:24.086] (CheckManager) Enabled check movement.Vehicles
+[08-12-2018 17:58:24.123] (CheckManager) Enabled check movement.Elytra
+[08-12-2018 17:58:24.129] (CheckManager) Enabled check movement.NoFall
+[08-12-2018 17:58:24.141] (CheckManager) Enabled check movement.Jesus
+[08-12-2018 17:58:24.144] (CheckManager) Enabled check movement.Derp
+[08-12-2018 17:58:24.152] (CheckManager) Enabled check combat.Criticals
+[08-12-2018 17:58:24.214] (CheckManager) Enabled check world.FastBreak
+[08-12-2018 17:58:24.217] (CheckManager) Enabled check world.FastPlace
+[08-12-2018 17:58:24.220] (CheckManager) Enabled check world.Nuker
+[08-12-2018 17:58:24.226] (CheckManager) Enabled check world.NoSwing
+[08-12-2018 17:58:24.234] (CheckManager) Enabled check world.Interact
+[08-12-2018 17:58:24.256] (CheckManager) Enabled check world.Velocity
+[08-12-2018 17:58:24.273] (CheckManager) Enabled check MovementManager
+[08-12-2018 17:58:24.313] AAC has been enabled
+[08-12-2018 17:58:29.032] (TPSManager) TPS dropped to 14.668133480014669
+[08-12-2018 17:58:29.036] (CheckManager) Disabled check combat.FightSpeed
+[08-12-2018 17:58:29.037] (CheckManager) Disabled check world.NoSwing
+[08-12-2018 17:58:29.038] (CheckManager) Disabled check combat.Hitbox
+[08-12-2018 17:58:30.065] (TPSManager) TPS dropped to 12.334258402713536
+[08-12-2018 17:58:30.960] (TPSManager) TPS dropped to 11.527377521613833
+[08-12-2018 17:58:31.719] (TPSManager) TPS dropped to 13.445378151260504
+[08-12-2018 17:58:32.405] (TPSManager) TPS dropped to 16.535758577924764
+[08-12-2018 17:58:33.296] (TPSManager) TPS dropped to 16.576875259013676
+[08-12-2018 17:58:34.125] (TPSManager) TPS dropped to 15.885623510722795
+[08-12-2018 17:58:34.791] (TPSManager) TPS dropped to 16.576875259013676
+[08-12-2018 17:58:35.011] emeraldtnt failed Fly: moved unexpectedly: 0.2481 (0.0000->-0.0784 / --27) [ping:0 tps:16.81] VL:11
+[08-12-2018 17:58:35.015] emeraldtnt failed Fly: moved unexpectedly: 0.1648 (0.0000->-0.0784 / --30) [ping:0 tps:16.81] VL:22
+[08-12-2018 17:58:35.063] emeraldtnt failed Fly: moved unexpectedly: 0.0831 (0.0000->-0.0784 / --30) [ping:0 tps:17.31] VL:32
+[08-12-2018 17:58:35.172] emeraldtnt failed Fly: moved unexpectedly: 0.0000 (0.0000->-0.0784 / --30) [ping:0 tps:17.92] VL:37
+[08-12-2018 17:58:35.443] (TPSManager) TPS dropped to 18.23985408116735
+[08-12-2018 17:58:36.117] (CheckManager) Enabled check combat.Hitbox
+[08-12-2018 17:58:36.120] (CheckManager) Enabled check combat.FightSpeed
+[08-12-2018 17:58:36.121] (CheckManager) Enabled check world.NoSwing

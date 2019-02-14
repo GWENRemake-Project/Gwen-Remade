@@ -1,0 +1,102 @@
+#  .d8888b.                            d8b          888 
+# d88P  Y88b                           Y8P          888 
+# 888    888                                        888 
+# 888        888d888 888  888  .d8888b 888  8888b.  888 
+# 888        888P"   888  888 d88P"    888     "88b 888 
+# 888    888 888     888  888 888      888 .d888888 888 
+# Y88b  d88P 888     Y88b 888 Y88b.    888 888  888 888 
+#  "Y8888P"  888      "Y88888  "Y8888P 888 "Y888888 888
+#								  (c) Flynrod 2016-2017
+
+# Main configuration of Crucial anticheat.
+main:
+  prefix: '&8&l[&4&lGWEN&8&l]:'
+  warnprefix: '&8&l(&4&lGWEN&8&l):'
+  reportprefix: '&8&l[&4&lGWEN&aReport&8&l]:'
+  lightning: true
+
+# To enable / disable debug mode.
+debug-mode: false
+
+report:
+  help: '&6/report <player> &7| &eReport a player'
+  noperm: '%reportprefix% &cYou can not report this player !'
+  menu: '&6Report'
+  cancel: '&cCancel report'
+  reported: '%reportprefix% &7You have been reported: &6%player%'
+
+# VARIABLES
+# %target% : Nickname of player
+# %cheat% : Cheat type
+dispatchcommand: "ba ban %target% gwen You used %cheat% hack!"
+
+messages:
+  # VARIABLES
+  # %player% : Name of player
+  # %cheat% : Cheat Type
+  # %command% : Command executed
+  # %target% : Name of target player
+  # %reason% : Reason of ban command
+  broadcast: "&4%target% &chas been banned for &7%cheat%"
+  warn: "&4%target%&2 is suspected for &4%cheat% &7(Ping : %ping% / TPS : %tps%)"
+  ban-command: "&e%player% &6has been banned &c%target% for &4%reason%"
+  ffcheck: "&aForcefield check launched on&e %player% &aplayer !"
+  not-online: "&e%target% &cis not online !"
+  error-command: "&cUse: &6%command%"
+  no-perm: "&cYou don't have the permission !"
+  reload: "&aCrucial has been reloaded !"
+  report: '%reportprefix% &c%player% &7was reported for: &4%reason%'
+  
+crucial:
+- "&7&m----------------------&r &4&lCRUCIAL &7&m----------------------"
+- "&6/crucial reload &e: Reload the config"
+- "&6/crucial ban &c<player> <reason> &e: Ban a player with Crucial"
+- "&7&m---------------------------------------------------------------"
+
+crucialnoperm:
+- "&cYou don't have the permission ! (crucial.help)"
+
+# Config checks
+# [!] Only true OR false
+checks:
+  criticials:
+    enable: true
+    ban: true
+  fastbow:
+    enable: true
+    ban: true
+  fightspeed:
+    enable: true
+    ban: true
+  fly:
+    enable: true
+    ban: true
+  speedhack:
+    enable: true
+    ban: true
+  jesus:
+    enable: true
+    ban: true
+  reach:
+    enable: true
+    ban: true
+  modifiedclient:
+    enable: true
+    broadcast: true
+    ban: true
+  fastladder:
+    enable: true
+    ban: true
+  glide:
+    enable: true
+  sneak:
+    enable: true
+    ban: true
+  forcefield:
+    enable: true
+    ban: true
+    invinsible: false
+    sneaking: true
+    timer: 100
+
+version: 1.5.7
